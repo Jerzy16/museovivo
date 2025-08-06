@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Museo Vivo</string>
+    
+    <!-- Authentication -->
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_success">Inicio de sesión exitoso</string>
+    <string name="logout">Cerrar sesión</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_ar">Realidad Aumentada</string>
+    <string name="nav_culture">Cultura</string>
+    <string name="nav_achievements">Logros</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_offline">Sin conexión</string>
+    
+    <!-- Map -->
+    <string name="map_title">Mapa Cultural</string>
+    <string name="points_of_interest">Puntos de Interés</string>
+    <string name="cultural_routes">Rutas Culturales</string>
+    <string name="current_location">Ubicación actual</string>
+    <string name="navigate_to">Navegar a</string>
+    <string name="route_distance">Distancia: %1$s</string>
+    <string name="route_duration">Duración: %1$s</string>
+    
+    <!-- AR -->
+    <string name="ar_title">Realidad Aumentada</string>
+    <string name="ar_point_camera">Apunta la cámara hacia el monumento</string>
+    <string name="ar_loading">Cargando modelo 3D...</string>
+    <string name="ar_error">Error al cargar contenido AR</string>
+    <string name="historical_reconstruction">Reconstrucción Histórica</string>
+    
+    <!-- Cultural Content -->
+    <string name="traditions">Tradiciones</string>
+    <string name="legends">Leyendas</string>
+    <string name="recipes">Recetas</string>
+    <string name="dances">Danzas</string>
+    <string name="historical_events">Eventos Históricos</string>
+    <string name="cultural_characters">Personajes Culturales</string>
+    <string name="multimedia_content">Contenido Multimedia</string>
+    
+    <!-- Achievements -->
+    <string name="achievements_title">Logros y Recompensas</string>
+    <string name="leaderboard">Tabla de Clasificación</string>
+    <string name="points_earned">Puntos obtenidos</string>
+    <string name="badges_unlocked">Insignias desbloqueadas</string>
+    <string name="explorer_badge">Explorador Cultural</string>
+    <string name="historian_badge">Historiador</string>
+    <string name="photographer_badge">Fotógrafo</string>
+    
+    <!-- User Content -->
+    <string name="upload_content">Subir Contenido</string>
+    <string name="take_photo">Tomar Foto</string>
+    <string name="record_audio">Grabar Audio</string>
+    <string name="record_video">Grabar Video</string>
+    <string name="add_description">Agregar Descripción</string>
+    <string name="upload_success">Contenido subido exitosamente</string>
+    
+    <!-- Offline -->
+    <string name="download_route">Descargar Ruta</string>
+    <string name="download_complete">Descarga completada</string>
+    <string name="offline_mode">Modo sin conexión</string>
+    <string name="content_cached">Contenido guardado para uso sin conexión</string>
+    
+    <!-- QR Scanner -->
+    <string name="qr_scanner_title">Escáner QR</string>
+    <string name="scan_qr_code">Escanea el código QR</string>
+    <string name="qr_detected">Código QR detectado</string>
+    
+    <!-- Errors -->
+    <string name="error_network">Error de conexión</string>
+    <string name="error_location">Error al obtener ubicación</string>
+    <string name="error_camera">Error de cámara</string>
+    <string name="error_upload">Error al subir contenido</string>
+    <string name="error_general">Ha ocurrido un error</string>
+    
+    <!-- Permissions -->
+    <string name="permission_location">Se necesita acceso a la ubicación para mostrar rutas culturales</string>
+    <string name="permission_camera">Se necesita acceso a la cámara para AR y escáner QR</string>
+    <string name="permission_storage">Se necesita acceso al almacenamiento para guardar contenido</string>
+    <string name="permission_audio">Se necesita acceso al micrófono para grabar audio</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="share">Compartir</string>
+    <string name="loading">Cargando...</string>
+    <string name="retry">Reintentar</string>
+</resources>
