@@ -41,10 +41,8 @@ public class CultureFragment extends Fragment {
     }
     
     private void setupTabs() {
-        tabLayout.addTab(tabLayout.newTab().setText("Tradiciones").setIcon(R.drawable.ic_traditions));
-        tabLayout.addTab(tabLayout.newTab().setText("Leyendas").setIcon(R.drawable.ic_legends));
-        tabLayout.addTab(tabLayout.newTab().setText("Recetas").setIcon(R.drawable.ic_recipes));
-        tabLayout.addTab(tabLayout.newTab().setText("Danzas").setIcon(R.drawable.ic_dances));
+        // Configurar botones de categorías
+        // Los botones ya están definidos en el layout XML
         
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

@@ -15,10 +15,10 @@ public class AuthRepository {
     private DatabaseReference usersRef;
     private MutableLiveData<FirebaseUser> userLiveData;
     private MutableLiveData<String> errorLiveData;
-    
+    // Constructor
     public AuthRepository() {
         firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://appmuse-default-rtdb.firebaseio.com/");
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://museovivo-7f141-default-rtdb.firebaseio.com/");
         usersRef = database.getReference("users");
         userLiveData = new MutableLiveData<>();
         errorLiveData = new MutableLiveData<>();
@@ -29,7 +29,7 @@ public class AuthRepository {
             userLiveData.setValue(user);
         });
     }
-    
+    // Iniciar sesión con Google
     public Task<AuthResult> loginWithEmail(String email, String password) {
         return firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener(authResult -> {
@@ -42,7 +42,7 @@ public class AuthRepository {
                     errorLiveData.setValue(e.getMessage());
                 });
     }
-    
+    // Registro de usuario con correo electrónico y contraseña
     public Task<AuthResult> registerWithEmail(String email, String password, String displayName) {
         return firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnSuccessListener(authResult -> {
@@ -57,7 +57,7 @@ public class AuthRepository {
                     errorLiveData.setValue(e.getMessage());
                 });
     }
-    
+    // Cerrar sesión
     public void logout() {
         firebaseAuth.signOut();
     }
@@ -68,7 +68,7 @@ public class AuthRepository {
                     errorLiveData.setValue(e.getMessage());
                 });
     }
-    
+    // Obtener el usuario actual
     public FirebaseUser getCurrentUser() {
         return firebaseAuth.getCurrentUser();
     }
@@ -84,23 +84,23 @@ public class AuthRepository {
     public LiveData<String> getErrorLiveData() {
         return errorLiveData;
     }
-    
+    // Crear el perfil de usuario en la base de datos
     private void createUserProfile(User user) {
         usersRef.child(user.getUid()).setValue(user)
                 .addOnFailureListener(e -> {
-                    errorLiveData.setValue("Error creating user profile: " + e.getMessage());
+                    errorLiveData.setValue("\n" + "Error al crear el perfil de usuario: " + e.getMessage());
                 });
     }
-    
+   // Actualizar la fecha del último inicio de sesión
     private void updateLastLogin(String userId) {
         usersRef.child(userId).child("lastLoginAt").setValue(System.currentTimeMillis());
     }
-    
+    /// Actualizar el perfil del usuario
     public void updateUserProfile(User user) {
         if (getCurrentUser() != null) {
             usersRef.child(user.getUid()).setValue(user)
                     .addOnFailureListener(e -> {
-                        errorLiveData.setValue("Error updating profile: " + e.getMessage());
+                        errorLiveData.setValue("Error al actualizar el perfil:" + e.getMessage());
                     });
         }
     }

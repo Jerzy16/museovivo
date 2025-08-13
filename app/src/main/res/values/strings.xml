@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Museo Vivo</string>
+    <string name="app_name">MuseoVivo</string>
+    
+    <!-- Google Maps API Key -->
+    <string name="google_maps_key">AIzaSyAZzb33sIzC1SrTnIXFS-myRMr-6OTtMUg</string>
+    
+    <!-- Map Activity -->
+    <string name="map_activity_title">Mapa Cultural</string>
+    <string name="btn_back">Regresar</string>
+    <string name="btn_location">Mi ubicación</string>
+    <string name="btn_view_details">Ver Detalles</string>
+    <string name="btn_navigate">Navegar</string>
+    <string name="fab_zoom_in">Acercar</string>
+    <string name="fab_zoom_out">Alejar</string>
+    <string name="fab_layers">Capas del mapa</string>
+    
+    <!-- Map Categories -->
+    <string name="category_all">Todos</string>
+    <string name="category_plazas">Plazas</string>
+    <string name="category_churches">Iglesias</string>
+    <string name="category_museums">Museos</string>
+    <string name="category_parks">Parques</string>
+    <string name="category_monuments">Monumentos</string>
+    <string name="category_markets">Mercados</string>
+    <string name="category_viewpoints">Miradores</string>
+    
+    <!-- Map Messages -->
+    <string name="filter_by_category">Filtrar por categoría</string>
+    <string name="location_permission_title">Permiso de Ubicación</string>
+    <string name="location_permission_message">Esta aplicación necesita acceso a tu ubicación para mostrarte puntos culturales cercanos.</string>
+    <string name="allow">Permitir</string>
+    <string name="permissions_granted">¡Permisos concedidos!</string>
+    <string name="location_functionality_limited">La funcionalidad de ubicación estará limitada</string>
+    <string name="location_permission_required">Permiso de ubicación requerido</string>
+    <string name="getting_location">Obteniendo tu ubicación…</string>
+    <string name="location_obtained">¡Ubicación obtenida!</string>
+    <string name="location_error">Error al obtener ubicación</string>
+    <string name="permission_error">Error de permisos</string>
+    <string name="centering_abancay">Centrando en Abancay</string>
+    <string name="distance_unavailable">Distancia no disponible</string>
+    
+    <!-- Map Types -->
+    <string name="map_type_title">Tipo de mapa</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_satellite">Satélite</string>
+    <string name="map_type_terrain">Terreno</string>
+    <string name="map_type_hybrid">Híbrido</string>
+    <string name="accept">Aceptar</string>
+    
+    <!-- Cultural Points -->
+    <string name="plaza_armas_name">Plaza de Armas de Abancay</string>
+    <string name="plaza_armas_description">La plaza principal de Abancay, corazón de la ciudad y centro histórico.</string>
+    <string name="plaza_armas_category">Plaza Histórica</string>
+    
+    <string name="iglesia_name">Iglesia de la Virgen del Rosario</string>
+    <string name="iglesia_description">Templo colonial de gran belleza arquitectónica construido en el siglo XVII.</string>
+    <string name="iglesia_category">Iglesias</string>
+    
+    <string name="puente_name">Puente Pachachaca</string>
+    <string name="puente_description">Puente colonial histórico sobre el río Pachachaca construido en el siglo XVIII.</string>
+    <string name="puente_category">Monumentos</string>
+    
+    <string name="mirador_name">El Mirador de Taraccasa</string>
+    <string name="mirador_description">Vista panorámica espectacular de la ciudad y los valles.</string>
+    <string name="mirador_category">Miradores</string>
+    
+    <string name="museo_name">Casa Hacienda de Illanya</string>
+    <string name="museo_description">Patrimonio cultural prehispánico con más de 200 bienes culturales.</string>
+    <string name="museo_category">Museos</string>
+    
+    <string name="mercado_name">Mercado Central de Abancay</string>
+    <string name="mercado_description">Centro comercial tradicional con productos locales y artesanías.</string>
+    <string name="mercado_category">Mercados</string>
+    
+    <string name="parque_name">Parque de la Libertad</string>
+    <string name="parque_description">Espacio verde recreativo ideal para paseos familiares.</string>
+    <string name="parque_category">Parques</string>
     
     <!-- Authentication -->
     <string name="login">Iniciar Sesión</string>
@@ -96,4 +171,17 @@
     <string name="share">Compartir</string>
     <string name="loading">Cargando...</string>
     <string name="retry">Reintentar</string>
+<!-- material design colors -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_variant</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:statusBarColor">@color/primary_variant</item>
+        <item name="android:navigationBarColor">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+    </style>
 </resources>

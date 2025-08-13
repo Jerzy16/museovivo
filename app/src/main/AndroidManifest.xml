@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Location permissions -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
 
     <!-- Network permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    
+
     <!-- Location permissions for GPS and maps -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    
+
     <!-- Camera permission for AR and QR scanning -->
     <uses-permission android:name="android.permission.CAMERA" />
-    
+
     <!-- Audio recording for user content -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    
+
     <!-- Storage permissions for offline content -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
-    
+
     <!-- Vibration for haptic feedback -->
     <uses-permission android:name="android.permission.VIBRATE" />
-    
+
     <!-- AR features -->
     <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
@@ -45,7 +49,8 @@
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCkuare8bmXIK4bqX6wC2bLQ_lgxdZHQEQ" />
+            android:value="AIzaSyAZzb33sIzC1SrTnIXFS-myRMr-6OTtMUg" />
+
 
         <!-- AR Core requirement -->
         <meta-data android:name="com.google.ar.core" android:value="optional" />
@@ -69,8 +74,9 @@
 
         <!-- Map Activity -->
         <activity
-            android:name=".ui.map.MapActivity"
-            android:exported="false" />
+            android:name=".mapas.MapActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MuseoVivo" />
 
         <!-- AR Activity -->
         <activity

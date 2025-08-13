@@ -14,7 +14,7 @@ public class Achievement {
     
     // Constructor vacío para Firebase
     public Achievement() {}
-    
+    // Constructor con parámetros
     public Achievement(String id, String name, String description, String category, 
                       int pointsRequired, String badgeType) {
         this.id = id;

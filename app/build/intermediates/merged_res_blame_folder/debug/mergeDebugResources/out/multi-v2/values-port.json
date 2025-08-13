@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.museovivo.app-mergeDebugResources-63:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jenzy\\.gradle\\caches\\8.10\\transforms\\ab39358b8c9d7153e6e5f368e25348f6\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://museoenvivo-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">556010182375</string>
+    <string name="google_api_key" translatable="false">AIzaSyBhWy4iXWkAvZkjV1Eg7kSc9dDE8TzHQWI</string>
+    <string name="google_app_id" translatable="false">1:556010182375:android:6c0effe26b959676687442</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBhWy4iXWkAvZkjV1Eg7kSc9dDE8TzHQWI</string>
+    <string name="google_storage_bucket" translatable="false">museoenvivo.firebasestorage.app</string>
+    <string name="project_id" translatable="false">museoenvivo</string>
+</resources>

@@ -19,7 +19,7 @@ import com.museovivo.app.ui.MainActivity;
 public class AuthActivity extends AppCompatActivity {
     
     private EditText editTextEmail, editTextPassword, editTextDisplayName;
-    private Button buttonLogin, buttonRegister, buttonToggleMode;
+    private Button buttonLogin, buttonRegister;
     private TextView textForgotPassword, textToggleMode;
     private ProgressBar progressBar;
     
@@ -43,10 +43,8 @@ public class AuthActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.edit_text_password);
         editTextDisplayName = findViewById(R.id.edit_text_display_name);
         buttonLogin = findViewById(R.id.button_login);
-        buttonRegister = findViewById(R.id.button_register);
-        buttonToggleMode = findViewById(R.id.button_toggle_mode);
-        textForgotPassword = findViewById(R.id.text_forgot_password);
         textToggleMode = findViewById(R.id.text_toggle_mode);
+        textForgotPassword = findViewById(R.id.text_forgot_password);
         progressBar = findViewById(R.id.progress_bar);
         
         updateUIForMode();
@@ -61,7 +59,7 @@ public class AuthActivity extends AppCompatActivity {
             }
         });
         
-        buttonToggleMode.setOnClickListener(v -> {
+        textToggleMode.setOnClickListener(v -> {
             isLoginMode = !isLoginMode;
             updateUIForMode();
         });
@@ -170,13 +168,13 @@ public class AuthActivity extends AppCompatActivity {
     private void updateUIForMode() {
         if (isLoginMode) {
             buttonLogin.setText("Iniciar Sesión");
-            buttonToggleMode.setText("¿No tienes cuenta? Regístrate");
-            editTextDisplayName.setVisibility(View.GONE);
+            textToggleMode.setText("¿No tienes cuenta? Regístrate");
+            findViewById(R.id.layout_display_name).setVisibility(View.GONE);
             textForgotPassword.setVisibility(View.VISIBLE);
         } else {
             buttonLogin.setText("Registrarse");
-            buttonToggleMode.setText("¿Ya tienes cuenta? Inicia sesión");
-            editTextDisplayName.setVisibility(View.VISIBLE);
+            textToggleMode.setText("¿Ya tienes cuenta? Inicia sesión");
+            findViewById(R.id.layout_display_name).setVisibility(View.VISIBLE);
             textForgotPassword.setVisibility(View.GONE);
         }
     }
@@ -184,6 +182,6 @@ public class AuthActivity extends AppCompatActivity {
     private void showProgress(boolean show) {
         progressBar.setVisibility(show ? View.VISIBLE : View.GONE);
         buttonLogin.setEnabled(!show);
-        buttonToggleMode.setEnabled(!show);
+        textToggleMode.setEnabled(!show);
     }
 }

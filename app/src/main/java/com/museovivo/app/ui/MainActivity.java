@@ -2,26 +2,25 @@ package com.museovivo.app.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.museovivo.app.R;
 import com.museovivo.app.ui.auth.AuthActivity;
 import com.museovivo.app.ui.main.HomeFragment;
-import com.museovivo.app.ui.map.MapFragment;
+
 import com.museovivo.app.ui.ar.ARFragment;
 import com.museovivo.app.ui.content.CultureFragment;
 import com.museovivo.app.ui.profile.ProfileFragment;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
     
-    private BottomNavigationView bottomNavigationView;
+    private ImageButton buttonHome, buttonMap, buttonAR, buttonCulture, buttonProfile;
     private FirebaseAuth firebaseAuth;
     
     @Override
@@ -34,12 +33,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         checkUserAuthentication();
         
         initializeViews();
-        setupBottomNavigation();
+        setupNavigation();
         
         // Mostrar fragmento inicial
         if (savedInstanceState == null) {
             loadFragment(new HomeFragment());
-            bottomNavigationView.setSelectedItemId(R.id.nav_home);
+            setActiveTab(buttonHome);
         }
     }
     
@@ -55,31 +54,52 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
     
     private void initializeViews() {
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        buttonHome = findViewById(R.id.btn_home);
+        buttonMap = findViewById(R.id.btn_map);
+        buttonAR = findViewById(R.id.btn_ar);
+        buttonCulture = findViewById(R.id.btn_culture);
+        buttonProfile = findViewById(R.id.btn_profile);
     }
     
-    private void setupBottomNavigation() {
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+    private void setupNavigation() {
+        buttonHome.setOnClickListener(v -> {
+            loadFragment(new HomeFragment());
+            setActiveTab(buttonHome);
+        });
+        
+        buttonMap.setOnClickListener(v -> {
+            // Launch MapActivity instead of loading MapFragment
+            Intent mapIntent = new Intent(MainActivity.this, com.museovivo.app.mapas.MapActivity.class);
+            startActivity(mapIntent);
+            setActiveTab(buttonMap);
+        });
+        
+        buttonAR.setOnClickListener(v -> {
+            loadFragment(new ARFragment());
+            setActiveTab(buttonAR);
+        });
+        
+        buttonCulture.setOnClickListener(v -> {
+            loadFragment(new CultureFragment());
+            setActiveTab(buttonCulture);
+        });
+        
+        buttonProfile.setOnClickListener(v -> {
+            loadFragment(new ProfileFragment());
+            setActiveTab(buttonProfile);
+        });
     }
     
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Fragment fragment = null;
+    private void setActiveTab(ImageButton activeButton) {
+        // Reset all buttons to normal state
+        buttonHome.setSelected(false);
+        buttonMap.setSelected(false);
+        buttonAR.setSelected(false);
+        buttonCulture.setSelected(false);
+        buttonProfile.setSelected(false);
         
-        int itemId = item.getItemId();
-        if (itemId == R.id.nav_home) {
-            fragment = new HomeFragment();
-        } else if (itemId == R.id.nav_map) {
-            fragment = new MapFragment();
-        } else if (itemId == R.id.nav_ar) {
-            fragment = new ARFragment();
-        } else if (itemId == R.id.nav_culture) {
-            fragment = new CultureFragment();
-        } else if (itemId == R.id.nav_profile) {
-            fragment = new ProfileFragment();
-        }
-        
-        return loadFragment(fragment);
+        // Set active button
+        activeButton.setSelected(true);
     }
     
     private boolean loadFragment(Fragment fragment) {

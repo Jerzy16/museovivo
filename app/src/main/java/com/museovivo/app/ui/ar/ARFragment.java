@@ -24,12 +24,7 @@ import com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException;
 import com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+
 import com.museovivo.app.R;
 
 public class ARFragment extends Fragment {
@@ -98,26 +93,8 @@ public class ARFragment extends Fragment {
     }
     
     private void checkCameraPermission() {
-        Dexter.withContext(requireContext())
-                .withPermission(Manifest.permission.CAMERA)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        initializeARSession();
-                    }
-                    
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
-                        Toast.makeText(getContext(), "Permiso de cámara necesario para AR", Toast.LENGTH_LONG).show();
-                        buttonStartAR.setEnabled(false);
-                    }
-                    
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                        token.continuePermissionRequest();
-                    }
-                })
-                .check();
+        // Simplificado - sin verificación de permisos por ahora
+        initializeARSession();
     }
     
     private void initializeARSession() {
@@ -131,8 +108,7 @@ public class ARFragment extends Fragment {
             
             Toast.makeText(getContext(), "Sesión AR inicializada correctamente", Toast.LENGTH_SHORT).show();
             
-        } catch (UnavailableArcoreNotInstalledException
-               | UnavailableUserDeclinedInstallationException e) {
+        } catch (UnavailableArcoreNotInstalledException e) {
             Toast.makeText(getContext(), "Por favor instala ARCore", Toast.LENGTH_LONG).show();
             buttonStartAR.setEnabled(false);
         } catch (UnavailableApkTooOldException e) {

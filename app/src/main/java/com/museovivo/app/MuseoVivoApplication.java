@@ -28,7 +28,7 @@ public class MuseoVivoApplication extends Application {
         // Initialize other components
         initializeComponents();
     }
-    
+    // Metodo para inicializar otros componentes necesarios
     private void initializeComponents() {
         // Initialize any other required components here
         // Example: Image loading libraries, crash reporting, etc.

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_culture.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_culture.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\activity_auth.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\bottom_sheet_point_info.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\bottom_sheet_point_info.xml"
+    },
+    {
+        "merged": "com.museovivo.app-mergeDebugResources-64:/layout/fragment_map_layers_bottom_sheet.xml",
+        "source": "com.museovivo.app-main-67:/layout/fragment_map_layers_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_map_layers_bottom_sheet.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_map_layers_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_ar.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_ar.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\activity_map.xml"
+    }
+]
