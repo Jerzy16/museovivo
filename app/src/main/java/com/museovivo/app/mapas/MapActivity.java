@@ -65,7 +65,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private CardView cardPointInfo;
     private TextView tvPointName, tvPointCategory, tvPointDistance, tvPointDescription;
     private ImageView ivPointImage;
-    private MaterialButton btnViewDetails, btnNavigate, btnFilter, btnCloseFilter;
+    private MaterialButton btnViewDetails, btnNavigate, btnBack, btnLocation;
     private FloatingActionButton fabZoomIn, fabZoomOut, fabLayers, fabFilter;
     private ChipGroup chipGroupCategories;
     private BottomSheetBehavior<View> bottomSheetBehavior;
@@ -222,7 +222,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             ivPointImage = findViewById(R.id.iv_point_image);
             btnViewDetails = findViewById(R.id.btn_view_details);
             btnNavigate = findViewById(R.id.btn_navigate);
-            btnCloseFilter = findViewById(R.id.btn_close_filter);
+            btnBack = findViewById(R.id.btn_back);
+            btnLocation = findViewById(R.id.btn_location);
             fabZoomIn = findViewById(R.id.fab_zoom_in);
             fabZoomOut = findViewById(R.id.fab_zoom_out);
             fabLayers = findViewById(R.id.fab_layers);
@@ -245,8 +246,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             if (ivPointImage == null) Log.e(TAG, "ivPointImage es null");
             if (btnViewDetails == null) Log.e(TAG, "btnViewDetails es null");
             if (btnNavigate == null) Log.e(TAG, "btnNavigate es null");
-            if (btnFilter == null) Log.e(TAG, "btnFilter es null");
-            if (btnCloseFilter == null) Log.e(TAG, "btnCloseFilter es null");
+            if (btnBack == null) Log.e(TAG, "btnFilter es null");
+            if (btnLocation == null) Log.e(TAG, "btnCloseFilter es null");
             if (fabZoomIn == null) Log.e(TAG, "fabZoomIn es null");
             if (fabZoomOut == null) Log.e(TAG, "fabZoomOut es null");
             if (fabLayers == null) Log.e(TAG, "fabLayers es null");
@@ -261,22 +262,28 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     }
 
     private void setupListeners() {
-        try {
             // Botón de regreso
-            if (findViewById(R.id.btn_back) != null) {
-                findViewById(R.id.btn_back).setOnClickListener(v -> {
-                    Log.d(TAG, "Botón de regreso presionado");
-                    finish();
-                });
-            }
+            btnBack.setOnClickListener(v -> {
+                animateButton(v, () -> finish());
+            });
 
             // Botón de ubicación
-            if (findViewById(R.id.btn_location) != null) {
-                findViewById(R.id.btn_location).setOnClickListener(v -> {
-                    Log.d(TAG, "Botón de ubicación presionado");
-                    centerOnMyLocation();
-                });
-            }
+            btnLocation.setOnClickListener(v -> {
+                animateButton(v, this::centerOnMyLocation);
+            });
+
+            // Botones de zoom
+            fabZoomIn.setOnClickListener(v -> {
+                if (mMap != null) {
+                    mMap.animateCamera(CameraUpdateFactory.zoomIn());
+                }
+            });
+            // Animar zoom in
+            fabZoomOut.setOnClickListener(v -> {
+                if (mMap != null) {
+                    mMap.animateCamera(CameraUpdateFactory.zoomOut());
+                }
+            });
 
             // Botones de zoom
             if (fabZoomIn != null) {
@@ -306,8 +313,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             }
 
             // Botón de filtro (toolbar)
-            if (btnFilter != null) {
-                btnFilter.setOnClickListener(v -> {
+            if (btnBack != null) {
+                btnBack.setOnClickListener(v -> {
                     Log.d(TAG, "Botón de filtro (toolbar) presionado");
                     showFilterBottomSheet();
                 });
@@ -322,8 +329,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             }
 
             // Botón de cerrar filtro
-            if (btnCloseFilter != null) {
-                btnCloseFilter.setOnClickListener(v -> {
+            if (btnLocation != null) {
+                btnLocation.setOnClickListener(v -> {
                     Log.d(TAG, "Botón de cerrar filtro presionado");
                     hideFilterBottomSheet();
                 });
@@ -352,12 +359,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     }
                 });
             }
-
-            Log.d(TAG, "Listeners configurados correctamente");
-
-        } catch (Exception e) {
-            Log.e(TAG, "Error al configurar listeners: " + e.getMessage());
-        }
     }
 // Configurar chips de categoría
 // Dentro de tu archivo C:\museovivo\app\src\main\java\com\museovivo\app\mapas\MapActivity.java

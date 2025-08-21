@@ -15,7 +15,8 @@
     <color name="secondary">#FF9800</color>
     <color name="secondary_variant">#F57C00</color>
     <color name="on_secondary">#000000</color>
-    <color name="background">#FFFFFFFF</color>
+    <color name="backgroundd">#FFFFFFFF</color>
+    <color name="background">#FFFEF7</color>
     <color name="on_background">#212121</color>
     <color name="surface">#FFFFFF</color>
     <color name="on_surface">#212121</color>

@@ -3,6 +3,7 @@ local
 color accent
 color accent_color
 color background
+color backgroundd
 color black
 color blue
 color card_background
@@ -37,6 +38,8 @@ color terracotta
 color warning
 color white
 color yellow
+drawable apurimac
+drawable auprimac1
 drawable circle_background
 drawable circular_button_background
 drawable edit_text_background

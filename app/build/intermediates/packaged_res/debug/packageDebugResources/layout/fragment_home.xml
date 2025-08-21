@@ -250,7 +250,12 @@
             android:id="@+id/recycler_featured_routes"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:textColor="@color/on_background"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:layout_marginBottom="16dp"
+
             tools:listitem="@layout/item_featured_route" />
 
         <!-- Statistics Section -->

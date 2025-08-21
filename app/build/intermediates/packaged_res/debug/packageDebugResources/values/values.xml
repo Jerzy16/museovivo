@@ -2,7 +2,8 @@
 <resources>
     <color name="accent">#FF9800</color>
     <color name="accent_color">#FF9800</color>
-    <color name="background">#FFFFFFFF</color>
+    <color name="background">#FFFEF7</color>
+    <color name="backgroundd">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="blue">#2196F3</color>
     <color name="card_background">#FFFFFF</color>

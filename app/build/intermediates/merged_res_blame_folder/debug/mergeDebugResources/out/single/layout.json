@@ -12,16 +12,16 @@
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_home.xml"
     },
     {
+        "merged": "com.museovivo.app-mergeDebugResources-64:/layout/fragment_home.xml",
+        "source": "com.museovivo.app-main-67:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_profile.xml",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\fragment_profile.xml"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\bottom_sheet_point_info.xml",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\bottom_sheet_point_info.xml"
-    },
-    {
-        "merged": "com.museovivo.app-mergeDebugResources-64:/layout/fragment_map_layers_bottom_sheet.xml",
-        "source": "com.museovivo.app-main-67:/layout/fragment_map_layers_bottom_sheet.xml"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-mergeDebugResources-64:\\layout\\fragment_map_layers_bottom_sheet.xml",

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.museovivo.app-debug-65:/layout_fragment_home.xml.flat",
+        "source": "com.museovivo.app-main-67:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\drawable_ic_close.xml.flat",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\drawable\\ic_close.xml"
-    },
-    {
-        "merged": "com.museovivo.app-debug-65:/layout_fragment_map_layers_bottom_sheet.xml.flat",
-        "source": "com.museovivo.app-main-67:/layout/fragment_map_layers_bottom_sheet.xml"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\mipmap-mdpi_ic_launcher.xml.flat",
@@ -74,6 +74,10 @@
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\mipmap-mdpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\mipmap-mdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\drawable_apurimac.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\drawable\\apurimac.jpg"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\layout_fragment_map_layers_bottom_sheet.xml.flat",
@@ -156,12 +160,16 @@
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\drawable\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\layout_activity_map.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\activity_map.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\drawable_auprimac1.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\drawable\\auprimac1.jpg"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\mipmap-xxxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-67:\\layout\\activity_map.xml"
     },
     {
         "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-65:\\mipmap-xhdpi_ic_launcher.xml.flat",

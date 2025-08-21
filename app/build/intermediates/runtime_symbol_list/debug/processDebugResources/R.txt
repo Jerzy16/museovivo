@@ -1439,6 +1439,7 @@ int color background_floating_material_dark 0x7f050020
 int color background_floating_material_light 0x7f050021
 int color background_material_dark 0x7f050022
 int color background_material_light 0x7f050023
+int color backgroundd 0x7f050339
 int color black 0x7f050024
 int color blue 0x7f050025
 int color bright_foreground_disabled_material_dark 0x7f050026
@@ -3113,6 +3114,8 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070073
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_material 0x7f070075
 int drawable abc_vector_test 0x7f070076
+int drawable apurimac 0x7f07011d
+int drawable auprimac1 0x7f07011e
 int drawable avd_hide_password 0x7f070077
 int drawable avd_show_password 0x7f070078
 int drawable btn_checkbox_checked_mtrl 0x7f070079

@@ -14,22 +14,23 @@
         android:padding="32dp">
 
         <!-- Logo -->
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="32dp"
-            android:src="@drawable/ic_museum_logo"
-            android:contentDescription="@string/app_name" />
 
         <!-- Título -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="149dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/auprimac1" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="@string/app_name"
+            android:textColor="@color/primary"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="@color/primary" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,11 +47,11 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp"
-            app:cardBackgroundColor="@color/surface">
+            app:cardBackgroundColor="@color/background">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="515dp"
                 android:orientation="vertical"
                 android:padding="24dp">
 
@@ -64,19 +65,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:text="@string/email"
                         android:textColor="@color/primary"
-                        android:textSize="14sp"
-                        android:layout_marginBottom="4dp" />
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/edit_text_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"
                         android:background="@drawable/edit_text_background"
-                        android:padding="12dp"
-                        android:hint="@string/email" />
+                        android:hint="@string/email"
+                        android:textColor="@color/primary"
+                        android:inputType="textEmailAddress"
+                        android:padding="12dp" />
 
                 </LinearLayout>
 
@@ -90,19 +92,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:text="@string/password"
                         android:textColor="@color/primary"
-                        android:textSize="14sp"
-                        android:layout_marginBottom="4dp" />
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/edit_text_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
                         android:background="@drawable/edit_text_background"
-                        android:padding="12dp"
-                        android:hint="@string/password" />
+                        android:hint="@string/password"
+                        android:textColor="@color/primary"
+                        android:inputType="textPassword"
+                        android:padding="12dp" />
 
                 </LinearLayout>
 
@@ -118,57 +121,64 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:text="Nombre completo"
                         android:textColor="@color/primary"
-                        android:textSize="14sp"
-                        android:layout_marginBottom="4dp" />
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/edit_text_display_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
                         android:background="@drawable/edit_text_background"
-                        android:padding="12dp"
-                        android:hint="Nombre completo" />
+                        android:hint="Nombre completo"
+                        android:textColor="@color/primary"
+                        android:inputType="textPersonName"
+                        android:padding="12dp" />
 
                 </LinearLayout>
 
                 <!-- Botón principal -->
                 <Button
                     android:id="@+id/button_login"
+                    style="@style/Button.Primary"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginBottom="16dp"
                     android:text="@string/login"
-                    style="@style/Button.Primary" />
+                    android:padding="12dp"
+                    android:textColor="@color/primary"
+                    />
 
                 <!-- ¿Olvidaste tu contraseña? -->
+
                 <TextView
                     android:id="@+id/text_forgot_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/forgot_password"
-                    android:textColor="@color/primary"
                     android:background="?attr/selectableItemBackground"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/text_toggle_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="¿No tienes cuenta? Regístrate"
+                    android:textColor="@color/primary" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <!-- Cambiar modo -->
-        <TextView
-            android:id="@+id/text_toggle_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="¿No tienes cuenta? Regístrate"
-            android:textColor="@color/primary"
-            android:background="?attr/selectableItemBackground"
-            android:padding="8dp" />
 
         <!-- Indicador de progreso -->
         <ProgressBar

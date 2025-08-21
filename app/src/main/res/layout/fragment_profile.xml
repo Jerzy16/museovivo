@@ -136,6 +136,7 @@
             android:layout_height="wrap_content"
             android:text="Editar Perfil"
             android:layout_marginBottom="8dp"
+            android:textColor="@color/accent"
             style="@style/Button.Primary" />
 
         <Button
@@ -144,7 +145,8 @@
             android:layout_height="wrap_content"
             android:text="Configuración"
             android:layout_marginBottom="8dp"
-            style="@style/Button.Secondary" />
+            android:textColor="@color/accent"
+            style="@style/Button.Primary" />
 
         <Button
             android:id="@+id/button_logout"
@@ -152,7 +154,8 @@
             android:layout_height="wrap_content"
             android:text="Cerrar Sesión"
             android:background="@color/error"
-            android:textColor="@color/on_primary" />
+            android:textColor="@color/accent"
+            style="@style/Button.Primary"/>
 
     </LinearLayout>
 
