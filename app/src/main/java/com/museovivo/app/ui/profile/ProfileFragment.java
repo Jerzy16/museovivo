@@ -27,7 +27,7 @@ public class ProfileFragment extends Fragment {
     private ImageView imageProfile;
     private TextView textUserName, textUserEmail, textTotalPoints, textVisitedPlaces;
     private RecyclerView recyclerAchievements;
-    private Button buttonEditProfile, buttonSettings, buttonLogout;
+    private Button buttonEditProfile, buttonLogout;
     
     private FirebaseAuth firebaseAuth;
     
@@ -57,9 +57,8 @@ public class ProfileFragment extends Fragment {
         textTotalPoints = view.findViewById(R.id.text_total_points);
         textVisitedPlaces = view.findViewById(R.id.text_visited_places);
         recyclerAchievements = view.findViewById(R.id.recycler_achievements);
-        buttonEditProfile = view.findViewById(R.id.button_edit_profile);
-        buttonSettings = view.findViewById(R.id.button_settings);
-        buttonLogout = view.findViewById(R.id.button_logout);
+    buttonEditProfile = view.findViewById(R.id.button_edit_profile);
+    buttonLogout = view.findViewById(R.id.button_logout);
         
         // Configurar RecyclerView para logros
         recyclerAchievements.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -67,13 +66,10 @@ public class ProfileFragment extends Fragment {
     
     private void setupClickListeners() {
         buttonEditProfile.setOnClickListener(v -> {
-            // TODO: Abrir pantalla de edición de perfil
-            Toast.makeText(getContext(), "Editando perfil...", Toast.LENGTH_SHORT).show();
-        });
-        
-        buttonSettings.setOnClickListener(v -> {
-            // TODO: Abrir configuraciones
-            Toast.makeText(getContext(), "Abriendo configuraciones...", Toast.LENGTH_SHORT).show();
+            // Abrir EditProfileActivity para editar nombre/foto
+            if (getActivity() != null) {
+                startActivity(new android.content.Intent(getActivity(), EditProfileActivity.class));
+            }
         });
         
         buttonLogout.setOnClickListener(v -> {
@@ -92,8 +88,19 @@ public class ProfileFragment extends Fragment {
             // Cargar datos básicos del usuario
             textUserName.setText(user.getDisplayName() != null ? user.getDisplayName() : "Usuario");
             textUserEmail.setText(user.getEmail());
-            
-            // Cargar foto de perfil
+
+            // Prefer local saved image path
+            android.content.SharedPreferences prefs = getActivity() != null ? getActivity().getSharedPreferences("user_prefs", android.content.Context.MODE_PRIVATE) : null;
+            String localPath = prefs != null ? prefs.getString("profile_image_path", null) : null;
+            if (localPath != null) {
+                java.io.File f = new java.io.File(localPath);
+                if (f.exists()) {
+                    Glide.with(this).load(f).circleCrop().placeholder(R.drawable.ic_profile).into(imageProfile);
+                    return;
+                }
+            }
+
+            // Cargar foto de perfil desde FirebaseAuth si no hay imagen local
             if (user.getPhotoUrl() != null) {
                 Glide.with(this)
                         .load(user.getPhotoUrl())

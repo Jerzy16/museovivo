@@ -22,17 +22,21 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import com.museovivo.app.R;
+import android.content.Intent;
+import com.museovivo.app.ui.content.CultureDetailActivity;
 
 import java.util.List;
 
 public class HomeFragment extends Fragment {
     
     private TextView textWelcome;
-    private Button buttonExploreMap, buttonStartAR, buttonViewCulture;
-    private RecyclerView recyclerFeaturedRoutes;
+    private Button buttonExploreMap;
+    private Button buttonStartAR;
+    private Button buttonViewCulture;
+    // Featured routes RecyclerView is kept local to avoid unnecessary field scope
     
     private FirebaseAuth firebaseAuth;
-    
+    //
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
@@ -45,30 +49,33 @@ public class HomeFragment extends Fragment {
         
         return view;
     }
-    
+    // Llamado después de que la vista ha sido creada
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         updateWelcomeText();
         loadFeaturedRoutes();
     }
-    
+    // Inicializar vistas
     private void initializeViews(View view) {
         textWelcome = view.findViewById(R.id.text_welcome);
         buttonExploreMap = view.findViewById(R.id.button_explore_map);
         buttonStartAR = view.findViewById(R.id.button_start_ar);
         buttonViewCulture = view.findViewById(R.id.button_view_culture);
-        recyclerFeaturedRoutes = view.findViewById(R.id.recycler_featured_routes);
-        
-        // Configurar RecyclerView
-        recyclerFeaturedRoutes.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        // Prefer a dedicated featured routes RecyclerView in home layout. Fall back to cultural content if missing.
+        RecyclerView recyclerFeaturedRoutes = view.findViewById(R.id.recycler_featured_routes);
+        if (recyclerFeaturedRoutes == null) {
+            recyclerFeaturedRoutes = view.findViewById(R.id.recycler_cultural_content);
+        }
+        if (recyclerFeaturedRoutes != null) {
+            recyclerFeaturedRoutes.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        }
     }
     
     private void setupClickListeners() {
         buttonExploreMap.setOnClickListener(v -> {
-            // Navegar al fragmento del mapa
+            // Navegar al fragmento del mapa (implementar navegación)
             if (getActivity() != null) {
-                // TODO: Implementar navegacion al MapFragment
                 Toast.makeText(getContext(), "Navegando al mapa...", Toast.LENGTH_SHORT).show();
             }
         });
@@ -76,7 +83,7 @@ public class HomeFragment extends Fragment {
         buttonStartAR.setOnClickListener(v -> {
             // Verificar permisos de cámara antes de iniciar AR
             if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                // TODO: Implementar navegacion al ARFragment
+                // Navegación a AR (pendiente implementación detallada)
                 Toast.makeText(getContext(), "Iniciando realidad aumentada...", Toast.LENGTH_SHORT).show();
             } else {
                 requestCameraPermission();
@@ -84,10 +91,9 @@ public class HomeFragment extends Fragment {
         });
         
         buttonViewCulture.setOnClickListener(v -> {
-            // Navegar al fragmento de cultura
             if (getActivity() != null) {
-                // TODO: Implementar navegacion al CultureFragment
-                Toast.makeText(getContext(), "Navegando a contenido cultural...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), CultureDetailActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -103,8 +109,7 @@ public class HomeFragment extends Fragment {
     }
     
     private void loadFeaturedRoutes() {
-        // TODO: Implementar carga de rutas destacadas desde Firebase
-        // Por ahora mostrar un mensaje
+        // Carga de rutas destacadas pendiente: actualmente se muestra un mensaje de placeholder
         if (getContext() != null) {
             Toast.makeText(getContext(), "Cargando rutas destacadas...", Toast.LENGTH_SHORT).show();
         }
@@ -122,6 +127,6 @@ public class HomeFragment extends Fragment {
     
     private void enableLocationFeatures() {
         // Habilitar funciones que requieren ubicación
-        // TODO: Implementar funcionalidades basadas en ubicacion
+    // Funcionalidades basadas en ubicación: pendiente de implementación
     }
 }

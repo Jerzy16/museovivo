@@ -4,13 +4,16 @@ package com.museovivo.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import com.museovivo.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,41 +21,51 @@ import java.lang.String;
 
 public final class FragmentCultureBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button btnDances;
-
-  @NonNull
-  public final Button btnLegends;
-
-  @NonNull
-  public final Button btnRecipes;
-
-  @NonNull
-  public final Button btnTraditions;
+  public final EditText etSearchCulture;
 
   @NonNull
   public final RecyclerView recyclerCulturalContent;
 
   @NonNull
-  public final LinearLayout tabLayoutCulture;
+  public final TabItem tabAll;
 
-  private FragmentCultureBinding(@NonNull LinearLayout rootView, @NonNull Button btnDances,
-      @NonNull Button btnLegends, @NonNull Button btnRecipes, @NonNull Button btnTraditions,
-      @NonNull RecyclerView recyclerCulturalContent, @NonNull LinearLayout tabLayoutCulture) {
+  @NonNull
+  public final TabItem tabDances;
+
+  @NonNull
+  public final TabLayout tabLayoutCulture;
+
+  @NonNull
+  public final TabItem tabLegends;
+
+  @NonNull
+  public final TabItem tabTraditions;
+
+  @NonNull
+  public final MaterialToolbar toolbarCulture;
+
+  private FragmentCultureBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull EditText etSearchCulture, @NonNull RecyclerView recyclerCulturalContent,
+      @NonNull TabItem tabAll, @NonNull TabItem tabDances, @NonNull TabLayout tabLayoutCulture,
+      @NonNull TabItem tabLegends, @NonNull TabItem tabTraditions,
+      @NonNull MaterialToolbar toolbarCulture) {
     this.rootView = rootView;
-    this.btnDances = btnDances;
-    this.btnLegends = btnLegends;
-    this.btnRecipes = btnRecipes;
-    this.btnTraditions = btnTraditions;
+    this.etSearchCulture = etSearchCulture;
     this.recyclerCulturalContent = recyclerCulturalContent;
+    this.tabAll = tabAll;
+    this.tabDances = tabDances;
     this.tabLayoutCulture = tabLayoutCulture;
+    this.tabLegends = tabLegends;
+    this.tabTraditions = tabTraditions;
+    this.toolbarCulture = toolbarCulture;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -77,27 +90,9 @@ public final class FragmentCultureBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_dances;
-      Button btnDances = ViewBindings.findChildViewById(rootView, id);
-      if (btnDances == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_legends;
-      Button btnLegends = ViewBindings.findChildViewById(rootView, id);
-      if (btnLegends == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_recipes;
-      Button btnRecipes = ViewBindings.findChildViewById(rootView, id);
-      if (btnRecipes == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_traditions;
-      Button btnTraditions = ViewBindings.findChildViewById(rootView, id);
-      if (btnTraditions == null) {
+      id = R.id.et_search_culture;
+      EditText etSearchCulture = ViewBindings.findChildViewById(rootView, id);
+      if (etSearchCulture == null) {
         break missingId;
       }
 
@@ -107,14 +102,45 @@ public final class FragmentCultureBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tab_all;
+      TabItem tabAll = ViewBindings.findChildViewById(rootView, id);
+      if (tabAll == null) {
+        break missingId;
+      }
+
+      id = R.id.tab_dances;
+      TabItem tabDances = ViewBindings.findChildViewById(rootView, id);
+      if (tabDances == null) {
+        break missingId;
+      }
+
       id = R.id.tab_layout_culture;
-      LinearLayout tabLayoutCulture = ViewBindings.findChildViewById(rootView, id);
+      TabLayout tabLayoutCulture = ViewBindings.findChildViewById(rootView, id);
       if (tabLayoutCulture == null) {
         break missingId;
       }
 
-      return new FragmentCultureBinding((LinearLayout) rootView, btnDances, btnLegends, btnRecipes,
-          btnTraditions, recyclerCulturalContent, tabLayoutCulture);
+      id = R.id.tab_legends;
+      TabItem tabLegends = ViewBindings.findChildViewById(rootView, id);
+      if (tabLegends == null) {
+        break missingId;
+      }
+
+      id = R.id.tab_traditions;
+      TabItem tabTraditions = ViewBindings.findChildViewById(rootView, id);
+      if (tabTraditions == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_culture;
+      MaterialToolbar toolbarCulture = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarCulture == null) {
+        break missingId;
+      }
+
+      return new FragmentCultureBinding((CoordinatorLayout) rootView, etSearchCulture,
+          recyclerCulturalContent, tabAll, tabDances, tabLayoutCulture, tabLegends, tabTraditions,
+          toolbarCulture);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -30,7 +30,8 @@ import com.museovivo.app.R;
 public class ARFragment extends Fragment {
     
     private TextView textARStatus;
-    private Button buttonStartAR, buttonScanQR;
+    private Button buttonStartAR;
+    private Button buttonScanQR;
     private Session arSession;
     private boolean isARSupported = false;
     
@@ -58,18 +59,21 @@ public class ARFragment extends Fragment {
     }
     
     private void setupClickListeners() {
-        buttonStartAR.setOnClickListener(v -> {
-            if (isARSupported && arSession != null) {
-                startARExperience();
-            } else {
-                Toast.makeText(getContext(), "AR no está disponible en este dispositivo", Toast.LENGTH_SHORT).show();
-            }
-        });
-        
-        buttonScanQR.setOnClickListener(v -> {
-            // TODO: Implementar escáner QR
-            Toast.makeText(getContext(), "Iniciando escáner QR...", Toast.LENGTH_SHORT).show();
-        });
+        if (buttonStartAR != null) {
+            buttonStartAR.setOnClickListener(v -> {
+                if (isARSupported && arSession != null) {
+                    startARExperience();
+                } else {
+                    Toast.makeText(getContext(), "AR no est\u00e1 disponible en este dispositivo", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        if (buttonScanQR != null) {
+            buttonScanQR.setOnClickListener(v ->
+                Toast.makeText(getContext(), "Iniciando esc\u00e1ner QR...", Toast.LENGTH_SHORT).show()
+            );
+        }
     }
     
     private void checkARSupport() {
@@ -136,8 +140,7 @@ public class ARFragment extends Fragment {
             arSession.resume();
             Toast.makeText(getContext(), "Experiencia AR iniciada", Toast.LENGTH_SHORT).show();
             
-            // TODO: Aquí se implementaría la interfaz AR completa
-            // Por ahora solo mostramos un mensaje
+            // Interfaz AR completa pendiente; por ahora se muestra un mensaje
             
         } catch (CameraNotAvailableException e) {
             Toast.makeText(getContext(), "Cámara no disponible", Toast.LENGTH_SHORT).show();

@@ -17,6 +17,15 @@
         android:layout_marginBottom="32dp" />
 
     <Button
+        android:id="@+id/button_start_ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar AR"
+        android:padding="16dp"
+        style="@style/Button.Primary"
+        android:layout_marginBottom="12dp" />
+
+    <Button
         android:id="@+id/button_scan_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

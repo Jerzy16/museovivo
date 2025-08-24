@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_variant_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Templo colonial construido en el siglo XVII, con importantes retablos y obras religiosas."
+        android:layout_marginTop="6dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Misas principales"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_iglesia_mass_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7:00 AM, 10:00 AM, 6:00 PM"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/secondary_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto: "
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parroquia de la Virgen del Rosario"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Galería"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/variant_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:paddingTop="6dp" />
+
+</LinearLayout>

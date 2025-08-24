@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Imagen principal en tarjeta -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp"
+            android:layout_margin="16dp">
+            <ImageView
+                android:id="@+id/iv_point_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Imagen del punto cultural" />
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Contenedor para variantes específicas por punto (se infla un fragment según el punto) -->
+        <FrameLayout
+            android:id="@+id/variant_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            />
+        <!-- Botones de acción con scroll horizontal -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always"
+            android:scrollbars="none"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+        </HorizontalScrollView>
+        <!-- Título y descripción -->
+        <TextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plaza de Armas de Abancay"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp" />
+        <!-- Descripción breve del punto (usada por PointDetailActivity) -->
+        <TextView
+            android:id="@+id/tv_point_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción breve del lugar."
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary_text"
+                android:layout_marginBottom="12dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Historia: "
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary_text" />
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fundada en el siglo XVI"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horario: "
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary_text" />
+                <TextView
+                    android:id="@+id/schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lun-Dom 6:00-22:00"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrada: "
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary_text" />
+                <TextView
+                    android:id="@+id/entry_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gratis"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacto: "
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary_text" />
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+51 123 456 789"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Galería horizontal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galería"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/secondary_color"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginHorizontal="16dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp" />
+        <!-- Valoración con estrellas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                style="@style/Widget.AppCompat.RatingBar.Small" />
+            <TextView
+                android:id="@+id/tv_rating_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <!-- Comentarios -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valoraciones y comentarios"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginHorizontal="16dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_comments"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="8dp" />
+        <!-- Campo para nuevo comentario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Escribe un comentario..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/primary_text" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_add_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send"
+                app:backgroundTint="@color/primary"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <!-- Información adicional -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_margin="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Información"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary_text"
+                    android:layout_marginBottom="12dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Historia: "
+                        android:textStyle="bold"
+                        android:textColor="@color/secondary_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fundada en el siglo XVI"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horario: "
+                        android:textStyle="bold"
+                        android:textColor="@color/secondary_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lun-Dom 6:00-22:00"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entrada: "
+                        android:textStyle="bold"
+                        android:textColor="@color/secondary_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gratis"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacto: "
+                        android:textStyle="bold"
+                        android:textColor="@color/secondary_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+51 123 456 789"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Botón de compartir final -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compartir lugar"
+            app:icon="@drawable/ic_share_placeholder"
+            app:iconGravity="textStart"
+            android:layout_margin="16dp" />
+        <!-- Botón Navegar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navegar"
+            app:icon="@drawable/ic_navigation_placeholder"
+            app:iconGravity="textStart"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!-- Botón flotantede regreso -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back_arrow"
+        app:backgroundTint="@color/white"
+        app:tint="@color/primary" />
+</FrameLayout> 

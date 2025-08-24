@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.museovivo.app-mergeDebugResources-63:/values-pt/values-pt.xml",
+            "outputFile": "com.museovivo.app-mergeDebugResources-64:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jenzy\\.gradle\\caches\\8.10\\transforms\\ffc7c21b126031567fd05c53913fdb34\\transformed\\navigation-ui-2.7.7\\res\\values-pt\\values-pt.xml",

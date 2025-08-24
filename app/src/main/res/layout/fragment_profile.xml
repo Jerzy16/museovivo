@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
@@ -61,7 +62,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/stats_background"
+                android:background="@drawable/edit_text_background"
                 android:padding="16dp"
                 android:layout_marginEnd="8dp">
 
@@ -89,7 +90,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/stats_background"
+                android:background="@drawable/edit_text_background"
                 android:padding="16dp"
                 android:layout_marginStart="8dp">
 
@@ -129,33 +130,45 @@
             android:layout_height="200dp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Action Buttons -->
-        <Button
+        <!-- Action Buttons (styled with Material Components) -->
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_edit_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar Perfil"
-            android:layout_marginBottom="8dp"
-            android:textColor="@color/accent"
-            style="@style/Button.Primary" />
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:insetLeft="12dp"
+            android:insetRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Editar perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/on_error"
+            app:cornerRadius="8dp"
+            app:iconPadding="12dp"
+            app:iconGravity="textStart"
+            android:backgroundTint="@color/primary"
+            app:iconTint="@color/primary"
+         />
 
-        <Button
-            android:id="@+id/button_settings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Configuración"
-            android:layout_marginBottom="8dp"
-            android:textColor="@color/accent"
-            style="@style/Button.Primary" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cerrar Sesión"
-            android:background="@color/error"
-            android:textColor="@color/accent"
-            style="@style/Button.Primary"/>
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:insetLeft="12dp"
+            android:insetRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/on_error"
+            app:cornerRadius="8dp"
+            app:iconPadding="12dp"
+            app:iconGravity="textStart"
+            app:iconTint="@color/on_error"
+            android:backgroundTint="@color/primary" />
 
     </LinearLayout>
 

@@ -142,7 +142,7 @@
         android:visibility="gone"
         app:cardCornerRadius="16dp"
         app:cardElevation="12dp"
-        app:cardBackgroundColor="@color/card_background">
+        app:cardBackgroundColor="@color/backgroundd">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -226,11 +226,11 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
                     android:text="Ver Detalles"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     app:cornerRadius="12dp"
                     app:icon="@drawable/ic_info"
-                    app:iconGravity="textStart" />
-
+                    app:iconGravity="textStart"
+                    style="@style/Widget.Material3.Button.OutlinedButton" />
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_navigate"
                     android:layout_width="0dp"
@@ -238,7 +238,7 @@
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
                     android:text="Navegar"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     app:cornerRadius="12dp"
                     app:icon="@drawable/ic_navigation_placeholder"
                     app:iconGravity="textStart"

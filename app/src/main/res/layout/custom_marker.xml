@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="60dp">
+
+        <!-- Fondo de lágrima -->
+        <ImageView
+            android:id="@+id/marker_background"
+            android:layout_width="48dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_marker_lagrima_red" />
+        <!-- Imagen circular simple -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/marker_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircularImageView" />
+    </FrameLayout>
+
+</LinearLayout> 

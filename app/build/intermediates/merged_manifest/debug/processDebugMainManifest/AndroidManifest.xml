@@ -10,32 +10,18 @@
     <!-- Location permissions -->
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
-
-    <!-- Network permissions -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> <!-- Network permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Location permissions for GPS and maps -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Location permissions for GPS and maps -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <!-- Camera permission for AR and QR scanning -->
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <!-- Audio recording for user content -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
-    <!-- Storage permissions for offline content -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Camera permission for AR and QR scanning -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Audio recording for user content -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Storage permissions for offline content -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
-
-    <!-- Vibration for haptic feedback -->
-    <uses-permission android:name="android.permission.VIBRATE" />
-
-    <!-- AR features -->
+        android:maxSdkVersion="28" /> <!-- Vibration for haptic feedback -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- AR features -->
     <uses-feature
         android:name="android.hardware.camera.ar"
         android:required="false" />
@@ -85,18 +71,19 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MuseoVivo" >
-
+        <activity
+            android:name="com.museovivo.app.pointdetail.FullscreenImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.museovivo.app.pointdetail.PointDetailActivity"
+            android:exported="false" />
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAZzb33sIzC1SrTnIXFS-myRMr-6OTtMUg" />
-
-        <!-- AR Core requirement -->
+            android:value="AIzaSyAZzb33sIzC1SrTnIXFS-myRMr-6OTtMUg" /> <!-- AR Core requirement -->
         <meta-data
             android:name="com.google.ar.core"
-            android:value="optional" />
-
-        <!-- Main Activity -->
+            android:value="optional" /> <!-- Main Activity -->
         <activity
             android:name="com.museovivo.app.ui.MainActivity"
             android:exported="true"
@@ -106,40 +93,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Authentication Activity -->
+        </activity> <!-- Authentication Activity -->
         <activity
             android:name="com.museovivo.app.ui.auth.AuthActivity"
             android:exported="false"
-            android:theme="@style/Theme.MuseoVivo" />
-
-        <!-- Map Activity -->
+            android:theme="@style/Theme.MuseoVivo" /> <!-- Map Activity -->
         <activity
             android:name="com.museovivo.app.mapas.MapActivity"
             android:exported="false"
-            android:theme="@style/Theme.MuseoVivo" />
-
-        <!-- AR Activity -->
+            android:theme="@style/Theme.MuseoVivo" /> <!-- AR Activity -->
         <activity
-            android:name="com.museovivo.app.ui.ar.ARActivity"
+            android:name="com.museovivo.app.ui.content.CultureDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.museovivo.app.ui.profile.EditProfileActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
-
-        <!-- Content Viewer Activity -->
-        <activity
-            android:name="com.museovivo.app.ui.content.ContentViewerActivity"
-            android:exported="false" />
-
-        <!-- Profile Activity -->
-        <activity
-            android:name="com.museovivo.app.ui.profile.ProfileActivity"
-            android:exported="false" />
-
-        <!-- QR Scanner Activity -->
-        <activity
-            android:name="com.museovivo.app.ui.scanner.QRScannerActivity"
-            android:exported="false" />
+            android:theme="@style/Theme.MuseoVivo" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" /> <!-- Needs to be explicitly declared on P+ -->

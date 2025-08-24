@@ -24,12 +24,16 @@ public final class FragmentArBinding implements ViewBinding {
   public final Button buttonScanQr;
 
   @NonNull
+  public final Button buttonStartAr;
+
+  @NonNull
   public final TextView textArStatus;
 
   private FragmentArBinding(@NonNull LinearLayout rootView, @NonNull Button buttonScanQr,
-      @NonNull TextView textArStatus) {
+      @NonNull Button buttonStartAr, @NonNull TextView textArStatus) {
     this.rootView = rootView;
     this.buttonScanQr = buttonScanQr;
+    this.buttonStartAr = buttonStartAr;
     this.textArStatus = textArStatus;
   }
 
@@ -66,13 +70,20 @@ public final class FragmentArBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button_start_ar;
+      Button buttonStartAr = ViewBindings.findChildViewById(rootView, id);
+      if (buttonStartAr == null) {
+        break missingId;
+      }
+
       id = R.id.text_ar_status;
       TextView textArStatus = ViewBindings.findChildViewById(rootView, id);
       if (textArStatus == null) {
         break missingId;
       }
 
-      return new FragmentArBinding((LinearLayout) rootView, buttonScanQr, textArStatus);
+      return new FragmentArBinding((LinearLayout) rootView, buttonScanQr, buttonStartAr,
+          textArStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

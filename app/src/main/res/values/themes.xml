@@ -94,4 +94,9 @@
         <item name="android:backgroundTint">@android:color/transparent</item>
         <item name="android:background">@drawable/outlined_button_background</item>
     </style>
+    <!-- Circular ImageView en el lagrima dw la ubicacion -->
+    <style name="CircularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

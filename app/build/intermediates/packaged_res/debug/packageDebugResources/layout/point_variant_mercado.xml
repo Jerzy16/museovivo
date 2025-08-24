@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consejos para visitantes"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_mercado_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llevar efectivo, probar comida local, respetar horarios de cierre. Evitar horas pico si no deseas aglomeraciones."
+        android:layout_marginTop="6dp"
+        android:textColor="@color/secondary_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horario: "
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05:00 - 20:00"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Galería"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/variant_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:paddingTop="6dp" />
+
+</LinearLayout>

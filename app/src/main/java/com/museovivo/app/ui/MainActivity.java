@@ -80,7 +80,9 @@ public class MainActivity extends AppCompatActivity {
         });
         
         buttonCulture.setOnClickListener(v -> {
-            loadFragment(new CultureFragment());
+            // Open CultureDetailActivity (full screen content) instead of fragment
+            Intent cultureIntent = new Intent(MainActivity.this, com.museovivo.app.ui.content.CultureDetailActivity.class);
+            startActivity(cultureIntent);
             setActiveTab(buttonCulture);
         });
         

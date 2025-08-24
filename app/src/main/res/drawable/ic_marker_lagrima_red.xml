@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="60dp"
+    android:viewportWidth="48"
+    android:viewportHeight="60">
+    <!-- Lágrima roja -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M24,58 C13,42 4,32 4,22 a20,20 0 0,1 40,0 c0,10 -9,20 -20,36z"/>
+</vector>

@@ -4,7 +4,6 @@ package com.museovivo.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -13,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
 import com.museovivo.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -23,13 +23,10 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button buttonEditProfile;
+  public final MaterialButton buttonEditProfile;
 
   @NonNull
-  public final Button buttonLogout;
-
-  @NonNull
-  public final Button buttonSettings;
+  public final MaterialButton buttonLogout;
 
   @NonNull
   public final ImageView imageProfile;
@@ -49,15 +46,14 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView textVisitedPlaces;
 
-  private FragmentProfileBinding(@NonNull ScrollView rootView, @NonNull Button buttonEditProfile,
-      @NonNull Button buttonLogout, @NonNull Button buttonSettings, @NonNull ImageView imageProfile,
-      @NonNull RecyclerView recyclerAchievements, @NonNull TextView textTotalPoints,
-      @NonNull TextView textUserEmail, @NonNull TextView textUserName,
-      @NonNull TextView textVisitedPlaces) {
+  private FragmentProfileBinding(@NonNull ScrollView rootView,
+      @NonNull MaterialButton buttonEditProfile, @NonNull MaterialButton buttonLogout,
+      @NonNull ImageView imageProfile, @NonNull RecyclerView recyclerAchievements,
+      @NonNull TextView textTotalPoints, @NonNull TextView textUserEmail,
+      @NonNull TextView textUserName, @NonNull TextView textVisitedPlaces) {
     this.rootView = rootView;
     this.buttonEditProfile = buttonEditProfile;
     this.buttonLogout = buttonLogout;
-    this.buttonSettings = buttonSettings;
     this.imageProfile = imageProfile;
     this.recyclerAchievements = recyclerAchievements;
     this.textTotalPoints = textTotalPoints;
@@ -94,20 +90,14 @@ public final class FragmentProfileBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_edit_profile;
-      Button buttonEditProfile = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton buttonEditProfile = ViewBindings.findChildViewById(rootView, id);
       if (buttonEditProfile == null) {
         break missingId;
       }
 
       id = R.id.button_logout;
-      Button buttonLogout = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton buttonLogout = ViewBindings.findChildViewById(rootView, id);
       if (buttonLogout == null) {
-        break missingId;
-      }
-
-      id = R.id.button_settings;
-      Button buttonSettings = ViewBindings.findChildViewById(rootView, id);
-      if (buttonSettings == null) {
         break missingId;
       }
 
@@ -148,8 +138,8 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       return new FragmentProfileBinding((ScrollView) rootView, buttonEditProfile, buttonLogout,
-          buttonSettings, imageProfile, recyclerAchievements, textTotalPoints, textUserEmail,
-          textUserName, textVisitedPlaces);
+          imageProfile, recyclerAchievements, textTotalPoints, textUserEmail, textUserName,
+          textVisitedPlaces);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

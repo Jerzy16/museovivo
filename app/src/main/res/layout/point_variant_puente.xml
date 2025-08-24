@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_puente_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Construido en el siglo XVIII, puente colonial de piedra que conectaba Abancay con regiones vecinas."
+        android:layout_marginTop="6dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recomendaciones"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_puente_safety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No cruzar con vehículos pesados. Evitar en época de lluvias. Mantenerse en las áreas designadas para peatones."
+        android:layout_marginTop="6dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Galería"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/variant_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:paddingTop="6dp" />
+
+</LinearLayout>

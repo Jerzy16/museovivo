@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.museovivo.app-mergeDebugResources-63:/values-es-rMX/values-es-rMX.xml",
+            "outputFile": "com.museovivo.app-mergeDebugResources-64:/values-es-rMX/values-es-rMX.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jenzy\\.gradle\\caches\\8.10\\transforms\\66f9e3162b419e26c3e7a294200b3b34\\transformed\\core-1.15.0\\res\\values-es-rMX\\values.xml",

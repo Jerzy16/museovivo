@@ -75,7 +75,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_map"
-                        android:tint="@color/on_primary"
+                        app:tint="@color/on_primary"
                         android:layout_marginEnd="16dp" />
 
                     <LinearLayout
@@ -135,7 +135,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_ar"
-                        android:tint="@color/on_secondary"
+                        app:tint="@color/on_secondary"
                         android:layout_marginEnd="16dp" />
 
                     <LinearLayout
@@ -194,7 +194,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_culture"
-                        android:tint="@color/on_primary"
+                        app:tint="@color/on_primary"
                         android:layout_marginEnd="16dp" />
 
                     <LinearLayout
@@ -237,26 +237,17 @@
         </LinearLayout>
 
         <!-- Featured Routes Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rutas Destacadas"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/on_background"
-            android:layout_marginBottom="16dp" />
 
+        <!-- Featured routes horizontal list (placeholder) -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_featured_routes"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:textColor="@color/on_background"
-            android:clipToPadding="false"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_height="120dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:clipToPadding="false" />
 
-            tools:listitem="@layout/item_featured_route" />
+        <!--            tools:listitem="@layout/item_featured_route" -->
 
         <!-- Statistics Section -->
         <LinearLayout

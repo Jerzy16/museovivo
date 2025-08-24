@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:src="@drawable/ic_home"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@color/primary"
+            app:tint="@color/primary"
             android:contentDescription="Inicio" />
 
         <ImageButton
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:src="@drawable/ic_map"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@color/primary"
+            app:tint="@color/primary"
             android:contentDescription="Mapa" />
 
         <ImageButton
@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:src="@drawable/ic_ar"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@color/primary"
+            app:tint="@color/primary"
             android:contentDescription="Realidad Aumentada" />
 
         <ImageButton
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:src="@drawable/ic_culture"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@color/primary"
+            app:tint="@color/primary"
             android:contentDescription="Cultura" />
 
         <ImageButton
@@ -71,7 +71,7 @@
             android:layout_weight="1"
             android:src="@drawable/ic_profile"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="@color/primary"
+            app:tint="@color/primary"
             android:contentDescription="Perfil" />
 
     </LinearLayout>

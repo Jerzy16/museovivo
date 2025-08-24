@@ -28,6 +28,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="red">#F44336</color>
     <color name="secondary">#FF9800</color>
+    <color name="secondary_color">#4CAF50</color>
     <color name="secondary_text">#757575</color>
     <color name="secondary_variant">#F57C00</color>
     <color name="success">#4CAF50</color>
@@ -196,6 +197,10 @@
         <item name="android:textColor">@color/secondary</item>
         <item name="android:padding">12dp</item>
         <item name="android:layout_margin">8dp</item>
+    </style>
+    <style name="CircularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
     <style name="Text.Body" parent="TextAppearance.AppCompat.Body1">
         <item name="android:textSize">16sp</item>
