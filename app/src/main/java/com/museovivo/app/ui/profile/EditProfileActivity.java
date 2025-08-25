@@ -35,7 +35,6 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private ImageView imageProfile;
     private EditText editName;
-    private EditText editPhotoUrl;
     private ProgressBar progressBar;
     private Uri imageUri;
 
@@ -49,16 +48,21 @@ public class EditProfileActivity extends AppCompatActivity {
     firebaseAuth = FirebaseAuth.getInstance();
 
         imageProfile = findViewById(R.id.image_profile_edit);
-        editName = findViewById(R.id.edit_name);
-        editPhotoUrl = findViewById(R.id.edit_photo_url);
+    editName = findViewById(R.id.edit_name);
         progressBar = findViewById(R.id.progress_edit);
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null) {
             editName.setText(user.getDisplayName());
-            if (user.getPhotoUrl() != null) {
-                editPhotoUrl.setText(user.getPhotoUrl().toString());
+            // Load local image if available, otherwise Firebase photo or default
+            android.content.SharedPreferences prefs = getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
+            String localPath = prefs.getString("profile_image_path", null);
+            if (localPath != null && new File(localPath).exists()) {
+                Glide.with(this).load(new File(localPath)).circleCrop().into(imageProfile);
+            } else if (user.getPhotoUrl() != null) {
                 Glide.with(this).load(user.getPhotoUrl()).circleCrop().into(imageProfile);
+            } else {
+                imageProfile.setImageResource(R.drawable.ic_profile);
             }
         }
 
@@ -79,15 +83,12 @@ public class EditProfileActivity extends AppCompatActivity {
             imageUri = data.getData();
             if (imageUri != null) {
                 Glide.with(this).load(imageUri).circleCrop().into(imageProfile);
-                // clear the manual URL field
-                editPhotoUrl.setText("");
             }
         }
     }
 
     private void saveProfile() {
-        String name = editName.getText().toString().trim();
-        String photoText = editPhotoUrl.getText().toString().trim();
+    String name = editName.getText().toString().trim();
 
         if (TextUtils.isEmpty(name)) {
             editName.setError("El nombre no puede estar vacío");
@@ -110,6 +111,11 @@ public class EditProfileActivity extends AppCompatActivity {
                 if (!dir.exists()) dir.mkdirs();
                 File outFile = new File(dir, uid + ".jpg");
 
+                // Delete previous file if exists to ensure a clean overwrite
+                if (outFile.exists()) {
+                    outFile.delete();
+                }
+
                 try (InputStream in = getContentResolver().openInputStream(imageUri);
                      FileOutputStream out = new FileOutputStream(outFile)) {
                     byte[] buffer = new byte[8192];
@@ -125,20 +131,13 @@ public class EditProfileActivity extends AppCompatActivity {
                 prefs.edit().putString("profile_image_path", outFile.getAbsolutePath()).apply();
 
                 updateUserProfile(user, name, localUri);
+                // Return success to caller
+                setResult(RESULT_OK);
             } catch (Exception e) {
                 progressBar.setVisibility(View.GONE);
                 Toast.makeText(this, "Error al guardar imagen localmente", Toast.LENGTH_SHORT).show();
             }
 
-        } else if (!TextUtils.isEmpty(photoText)) {
-            // If user wrote a URL manually, use it (and don't save locally)
-            try {
-                Uri uri = Uri.parse(photoText);
-                updateUserProfile(user, name, uri);
-            } catch (Exception e) {
-                progressBar.setVisibility(View.GONE);
-                Toast.makeText(this, "URL de foto inválida", Toast.LENGTH_SHORT).show();
-            }
         } else {
             // No image change
             updateUserProfile(user, name, null);

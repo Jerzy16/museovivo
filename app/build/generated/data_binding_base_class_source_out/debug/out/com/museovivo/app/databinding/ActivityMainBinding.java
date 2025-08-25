@@ -25,9 +25,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final LinearLayout bottomNavigation;
 
   @NonNull
-  public final ImageButton btnAr;
-
-  @NonNull
   public final ImageButton btnCulture;
 
   @NonNull
@@ -43,12 +40,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FrameLayout fragmentContainer;
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull LinearLayout bottomNavigation, @NonNull ImageButton btnAr,
-      @NonNull ImageButton btnCulture, @NonNull ImageButton btnHome, @NonNull ImageButton btnMap,
-      @NonNull ImageButton btnProfile, @NonNull FrameLayout fragmentContainer) {
+      @NonNull LinearLayout bottomNavigation, @NonNull ImageButton btnCulture,
+      @NonNull ImageButton btnHome, @NonNull ImageButton btnMap, @NonNull ImageButton btnProfile,
+      @NonNull FrameLayout fragmentContainer) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
-    this.btnAr = btnAr;
     this.btnCulture = btnCulture;
     this.btnHome = btnHome;
     this.btnMap = btnMap;
@@ -89,12 +85,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_ar;
-      ImageButton btnAr = ViewBindings.findChildViewById(rootView, id);
-      if (btnAr == null) {
-        break missingId;
-      }
-
       id = R.id.btn_culture;
       ImageButton btnCulture = ViewBindings.findChildViewById(rootView, id);
       if (btnCulture == null) {
@@ -125,7 +115,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, bottomNavigation, btnAr, btnCulture,
+      return new ActivityMainBinding((RelativeLayout) rootView, bottomNavigation, btnCulture,
           btnHome, btnMap, btnProfile, fragmentContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);

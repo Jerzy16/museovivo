@@ -94,8 +94,6 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jenzy\.gradle\caches\8
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\f9284887dac1d9a85b877f54d40a33fe\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\43b14681d42a6ddb810d2991088afd43\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.13.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\b4db7112bfe85bcf9ef9455c49b0ffdc\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.ar.sceneform:core:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c71c14d943c947c0890a6f85d170dfef\transformed\core-1.17.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.ar.sceneform:sceneform-base:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\aa322ca4b04df0d3f4db3b7721036e3e\transformed\sceneform-base-1.17.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\1b100de29c4d58677e627d957b8471ac\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\f27ebf9fdb960398ff965fca766f74ca\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\0c132e92b1607377b7f7125022ea0d5d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -111,9 +109,6 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jenzy\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\efc6e2c78e0214babb60b2b5e7b9d367\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\eaeef816e19ead1ae7c90b47b8d32e31\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\add90650e4374f568e4f97b1b12e6cec\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.ar.sceneform:rendering:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\3cef795a52a2157a1527c056a701f87b\transformed\rendering-1.17.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.ar.sceneform:filament-android:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c87c566ec1d579663fed362ac0720e8e\transformed\filament-android-1.17.1\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:2:1-21:12
 	package
 		INJECTED from C:\museovivo\app\src\main\AndroidManifest.xml
@@ -322,8 +317,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\je
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\0c132e92b1607377b7f7125022ea0d5d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c69762439a8269bc5848fea7d0651f4f\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c69762439a8269bc5848fea7d0651f4f\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:30:5-44:19
-MERGED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:30:5-44:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
@@ -408,12 +401,12 @@ ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:70:9-73:54
 		ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:73:13-51
 	android:name
 		ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:71:13-46
-activity#com.museovivo.app.ui.content.CultureDetailActivity
+activity#com.museovivo.app.ui.content.CulturalDetailActivity
 ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:74:9-76:40
 	android:exported
 		ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:75:13-61
+		ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:75:13-62
 activity#com.museovivo.app.ui.profile.EditProfileActivity
 ADDED from C:\museovivo\app\src\main\AndroidManifest.xml:77:9-80:54
 	android:exported
@@ -606,10 +599,6 @@ MERGED from [androidx.customview:customview:1.1.0] C:\Users\jenzy\.gradle\caches
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\43b14681d42a6ddb810d2991088afd43\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.13.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\b4db7112bfe85bcf9ef9455c49b0ffdc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\b4db7112bfe85bcf9ef9455c49b0ffdc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.ar.sceneform:core:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c71c14d943c947c0890a6f85d170dfef\transformed\core-1.17.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:core:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c71c14d943c947c0890a6f85d170dfef\transformed\core-1.17.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:sceneform-base:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\aa322ca4b04df0d3f4db3b7721036e3e\transformed\sceneform-base-1.17.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:sceneform-base:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\aa322ca4b04df0d3f4db3b7721036e3e\transformed\sceneform-base-1.17.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\1b100de29c4d58677e627d957b8471ac\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\1b100de29c4d58677e627d957b8471ac\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\f27ebf9fdb960398ff965fca766f74ca\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
@@ -640,12 +629,6 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\jenzy\.
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\eaeef816e19ead1ae7c90b47b8d32e31\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\add90650e4374f568e4f97b1b12e6cec\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\add90650e4374f568e4f97b1b12e6cec\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:rendering:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\3cef795a52a2157a1527c056a701f87b\transformed\rendering-1.17.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:rendering:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\3cef795a52a2157a1527c056a701f87b\transformed\rendering-1.17.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.ar.sceneform:filament-android:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c87c566ec1d579663fed362ac0720e8e\transformed\filament-android-1.17.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.ar.sceneform:filament-android:1.17.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\c87c566ec1d579663fed362ac0720e8e\transformed\filament-android-1.17.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:26:5-28:41
-MERGED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:26:5-28:41
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
@@ -1074,26 +1057,6 @@ uses-permission#com.example.museoenvivo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\b4db7112bfe85bcf9ef9455c49b0ffdc\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\jenzy\.gradle\caches\8.10\transforms\b4db7112bfe85bcf9ef9455c49b0ffdc\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-meta-data#com.google.ar.core.min_apk_version
-ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:33:9-35:41
-	android:value
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:35:13-38
-	android:name
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:34:13-62
-activity#com.google.ar.core.InstallActivity
-ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:37:9-43:80
-	android:excludeFromRecents
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:40:13-46
-	android:launchMode
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:42:13-43
-	android:exported
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:41:13-37
-	android:configChanges
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:39:13-74
-	android:theme
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:43:13-77
-	android:name
-		ADDED from [com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:38:13-62
 activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
 ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
 	android:stateNotNeeded

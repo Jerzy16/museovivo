@@ -29,9 +29,6 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   public final EditText editName;
 
   @NonNull
-  public final EditText editPhotoUrl;
-
-  @NonNull
   public final ImageView imageProfileEdit;
 
   @NonNull
@@ -39,12 +36,10 @@ public final class ActivityEditProfileBinding implements ViewBinding {
 
   private ActivityEditProfileBinding(@NonNull ScrollView rootView,
       @NonNull MaterialButton buttonSaveProfile, @NonNull EditText editName,
-      @NonNull EditText editPhotoUrl, @NonNull ImageView imageProfileEdit,
-      @NonNull ProgressBar progressEdit) {
+      @NonNull ImageView imageProfileEdit, @NonNull ProgressBar progressEdit) {
     this.rootView = rootView;
     this.buttonSaveProfile = buttonSaveProfile;
     this.editName = editName;
-    this.editPhotoUrl = editPhotoUrl;
     this.imageProfileEdit = imageProfileEdit;
     this.progressEdit = progressEdit;
   }
@@ -88,12 +83,6 @@ public final class ActivityEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.edit_photo_url;
-      EditText editPhotoUrl = ViewBindings.findChildViewById(rootView, id);
-      if (editPhotoUrl == null) {
-        break missingId;
-      }
-
       id = R.id.image_profile_edit;
       ImageView imageProfileEdit = ViewBindings.findChildViewById(rootView, id);
       if (imageProfileEdit == null) {
@@ -107,7 +96,7 @@ public final class ActivityEditProfileBinding implements ViewBinding {
       }
 
       return new ActivityEditProfileBinding((ScrollView) rootView, buttonSaveProfile, editName,
-          editPhotoUrl, imageProfileEdit, progressEdit);
+          imageProfileEdit, progressEdit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

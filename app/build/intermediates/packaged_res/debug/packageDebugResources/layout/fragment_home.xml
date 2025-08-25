@@ -115,65 +115,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Realidad Aumentada -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="@color/secondary">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_ar"
-                        app:tint="@color/on_secondary"
-                        android:layout_marginEnd="16dp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Realidad Aumentada"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/on_secondary" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Visualiza reconstrucciones 3D de monumentos"
-                            android:textSize="14sp"
-                            android:textColor="@color/on_secondary"
-                            android:alpha="0.8" />
-
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/button_start_ar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="36dp"
-                        android:text="Iniciar"
-                        android:textSize="12sp"
-                        android:backgroundTint="@color/accent"
-                        android:textColor="@color/on_secondary" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            <!-- Realidad Aumentada eliminado: ya no se usa -->
 
             <!-- Contenido Cultural -->
             <androidx.cardview.widget.CardView
@@ -239,13 +181,6 @@
         <!-- Featured Routes Section -->
 
         <!-- Featured routes horizontal list (placeholder) -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_featured_routes"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:clipToPadding="false" />
 
         <!--            tools:listitem="@layout/item_featured_route" -->
 
@@ -273,6 +208,7 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/text_visited_places_home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -309,6 +245,7 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/text_total_points_home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"

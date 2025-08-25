@@ -70,9 +70,9 @@
         <activity
             android:name=".mapas.MapActivity"
             android:exported="false"
-            android:theme="@style/Theme.MuseoVivo" /> <!-- AR Activity -->
+            android:theme="@style/Theme.MuseoVivo" />
         <activity
-            android:name=".ui.content.CultureDetailActivity"
+            android:name=".ui.content.CulturalDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.profile.EditProfileActivity"

@@ -200,12 +200,12 @@
 102-->C:\museovivo\app\src\main\AndroidManifest.xml:71:13-46
 103            android:exported="false"
 103-->C:\museovivo\app\src\main\AndroidManifest.xml:72:13-37
-104            android:theme="@style/Theme.MuseoVivo" /> <!-- AR Activity -->
+104            android:theme="@style/Theme.MuseoVivo" />
 104-->C:\museovivo\app\src\main\AndroidManifest.xml:73:13-51
 105        <activity
 105-->C:\museovivo\app\src\main\AndroidManifest.xml:74:9-76:40
-106            android:name="com.museovivo.app.ui.content.CultureDetailActivity"
-106-->C:\museovivo\app\src\main\AndroidManifest.xml:75:13-61
+106            android:name="com.museovivo.app.ui.content.CulturalDetailActivity"
+106-->C:\museovivo\app\src\main\AndroidManifest.xml:75:13-62
 107            android:exported="false" />
 107-->C:\museovivo\app\src\main\AndroidManifest.xml:76:13-37
 108        <activity
@@ -577,38 +577,18 @@
 302-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\b11cf0a2ea6bc4062a16e4cdd108903b\transformed\play-services-basement-18.5.0\AndroidManifest.xml:21:9-23:69
 303            android:name="com.google.android.gms.version"
 303-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\b11cf0a2ea6bc4062a16e4cdd108903b\transformed\play-services-basement-18.5.0\AndroidManifest.xml:22:13-58
-304            android:value="@integer/google_play_services_version" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+304            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
 304-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\b11cf0a2ea6bc4062a16e4cdd108903b\transformed\play-services-basement-18.5.0\AndroidManifest.xml:23:13-66
-305        <meta-data
-305-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:33:9-35:41
-306            android:name="com.google.ar.core.min_apk_version"
-306-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:34:13-62
-307            android:value="191106000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
-307-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:35:13-38
-308        <activity
-308-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:37:9-43:80
-309            android:name="com.google.ar.core.InstallActivity"
-309-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:38:13-62
-310            android:configChanges="keyboardHidden|orientation|screenSize"
-310-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:39:13-74
-311            android:excludeFromRecents="true"
-311-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:40:13-46
-312            android:exported="false"
-312-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:41:13-37
-313            android:launchMode="singleTop"
-313-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:42:13-43
-314            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-314-->[com.google.ar:core:1.15.0] C:\Users\jenzy\.gradle\caches\8.10\transforms\66f9e3162b419e26c3e7a294200b3b34\transformed\core-1.15.0\AndroidManifest.xml:43:13-77
-315        <activity
-315-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
-316            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-316-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
-317            android:exported="false"
-317-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
-318            android:stateNotNeeded="true"
-318-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
-319            android:theme="@style/Theme.PlayCore.Transparent" />
-319-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
-320    </application>
-321
-322</manifest>
+305        <activity
+305-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+306            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+306-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+307            android:exported="false"
+307-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+308            android:stateNotNeeded="true"
+308-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+309            android:theme="@style/Theme.PlayCore.Transparent" />
+309-->[com.google.android.play:core-common:2.0.3] C:\Users\jenzy\.gradle\caches\8.10\transforms\d8f11f9aa138e029392783462cfb5140\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+310    </application>
+311
+312</manifest>

@@ -9,7 +9,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.button.MaterialButton;
@@ -32,9 +31,6 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ImageView imageProfile;
 
   @NonNull
-  public final RecyclerView recyclerAchievements;
-
-  @NonNull
   public final TextView textTotalPoints;
 
   @NonNull
@@ -48,14 +44,13 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   private FragmentProfileBinding(@NonNull ScrollView rootView,
       @NonNull MaterialButton buttonEditProfile, @NonNull MaterialButton buttonLogout,
-      @NonNull ImageView imageProfile, @NonNull RecyclerView recyclerAchievements,
-      @NonNull TextView textTotalPoints, @NonNull TextView textUserEmail,
-      @NonNull TextView textUserName, @NonNull TextView textVisitedPlaces) {
+      @NonNull ImageView imageProfile, @NonNull TextView textTotalPoints,
+      @NonNull TextView textUserEmail, @NonNull TextView textUserName,
+      @NonNull TextView textVisitedPlaces) {
     this.rootView = rootView;
     this.buttonEditProfile = buttonEditProfile;
     this.buttonLogout = buttonLogout;
     this.imageProfile = imageProfile;
-    this.recyclerAchievements = recyclerAchievements;
     this.textTotalPoints = textTotalPoints;
     this.textUserEmail = textUserEmail;
     this.textUserName = textUserName;
@@ -107,12 +102,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.recycler_achievements;
-      RecyclerView recyclerAchievements = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerAchievements == null) {
-        break missingId;
-      }
-
       id = R.id.text_total_points;
       TextView textTotalPoints = ViewBindings.findChildViewById(rootView, id);
       if (textTotalPoints == null) {
@@ -138,8 +127,7 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       return new FragmentProfileBinding((ScrollView) rootView, buttonEditProfile, buttonLogout,
-          imageProfile, recyclerAchievements, textTotalPoints, textUserEmail, textUserName,
-          textVisitedPlaces);
+          imageProfile, textTotalPoints, textUserEmail, textUserName, textVisitedPlaces);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

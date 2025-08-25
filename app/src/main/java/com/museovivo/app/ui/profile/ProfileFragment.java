@@ -23,10 +23,11 @@ import com.museovivo.app.R;
 import com.museovivo.app.ui.auth.AuthActivity;
 
 public class ProfileFragment extends Fragment {
+    private static final int REQUEST_EDIT_PROFILE = 2001;
     
     private ImageView imageProfile;
     private TextView textUserName, textUserEmail, textTotalPoints, textVisitedPlaces;
-    private RecyclerView recyclerAchievements;
+    // RecyclerView de logros eliminado
     private Button buttonEditProfile, buttonLogout;
     
     private FirebaseAuth firebaseAuth;
@@ -46,29 +47,26 @@ public class ProfileFragment extends Fragment {
     
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        loadAchievements();
+    super.onViewCreated(view, savedInstanceState);
+    // Carga de logros eliminada, no hay RecyclerView ni logros en la UI
     }
     
     private void initializeViews(View view) {
-        imageProfile = view.findViewById(R.id.image_profile);
-        textUserName = view.findViewById(R.id.text_user_name);
-        textUserEmail = view.findViewById(R.id.text_user_email);
-        textTotalPoints = view.findViewById(R.id.text_total_points);
-        textVisitedPlaces = view.findViewById(R.id.text_visited_places);
-        recyclerAchievements = view.findViewById(R.id.recycler_achievements);
+    imageProfile = view.findViewById(R.id.image_profile);
+    textUserName = view.findViewById(R.id.text_user_name);
+    textUserEmail = view.findViewById(R.id.text_user_email);
+    textTotalPoints = view.findViewById(R.id.text_total_points);
+    textVisitedPlaces = view.findViewById(R.id.text_visited_places);
     buttonEditProfile = view.findViewById(R.id.button_edit_profile);
     buttonLogout = view.findViewById(R.id.button_logout);
-        
-        // Configurar RecyclerView para logros
-        recyclerAchievements.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+    // RecyclerView de logros eliminado porque no existe en el layout
     }
-    
     private void setupClickListeners() {
         buttonEditProfile.setOnClickListener(v -> {
-            // Abrir EditProfileActivity para editar nombre/foto
+            // Abrir EditProfileActivity para editar nombre/foto y esperar resultado
             if (getActivity() != null) {
-                startActivity(new android.content.Intent(getActivity(), EditProfileActivity.class));
+                Intent intent = new android.content.Intent(getActivity(), EditProfileActivity.class);
+                startActivityForResult(intent, REQUEST_EDIT_PROFILE);
             }
         });
         
@@ -95,7 +93,9 @@ public class ProfileFragment extends Fragment {
             if (localPath != null) {
                 java.io.File f = new java.io.File(localPath);
                 if (f.exists()) {
-                    Glide.with(this).load(f).circleCrop().placeholder(R.drawable.ic_profile).into(imageProfile);
+                    long sig = f.lastModified();
+                    com.bumptech.glide.signature.ObjectKey key = new com.bumptech.glide.signature.ObjectKey(sig);
+                    Glide.with(this).load(f).signature(key).circleCrop().placeholder(R.drawable.ic_profile).into(imageProfile);
                     return;
                 }
             }
@@ -115,18 +115,15 @@ public class ProfileFragment extends Fragment {
     }
     
     private void loadUserStatistics(String userId) {
-        // TODO: Implementar carga desde Firebase Realtime Database
-        // Por ahora mostrar datos de ejemplo
-        textTotalPoints.setText("0 puntos");
-        textVisitedPlaces.setText("0 lugares");
-        
-        Toast.makeText(getContext(), "Cargando estadísticas...", Toast.LENGTH_SHORT).show();
+        android.content.SharedPreferences prefs = getActivity() != null ? getActivity().getSharedPreferences("user_stats", android.content.Context.MODE_PRIVATE) : null;
+        int points = prefs != null ? prefs.getInt("points_gained", 0) : 0;
+        int visited = prefs != null ? prefs.getInt("places_visited", 0) : 0;
+        textTotalPoints.setText(points + " puntos");
+        textVisitedPlaces.setText(visited + " lugares");
     }
     
     private void loadAchievements() {
-        // TODO: Implementar carga de logros desde Firebase
-        // Por ahora mostrar mensaje
-        Toast.makeText(getContext(), "Cargando logros...", Toast.LENGTH_SHORT).show();
+    // Método eliminado, logros no implementados en la UI actual
     }
     
     private void performLogout() {
@@ -147,5 +144,17 @@ public class ProfileFragment extends Fragment {
         super.onResume();
         // Recargar datos cuando el fragmento vuelve a ser visible
         loadUserData();
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_EDIT_PROFILE && resultCode == getActivity().RESULT_OK) {
+            // Clear any Glide cache for this view and reload user data so new avatar appears
+            try {
+                Glide.with(this).clear(imageProfile);
+            } catch (Exception ignored) {}
+            loadUserData();
+        }
     }
 }

@@ -101,9 +101,9 @@
         <activity
             android:name="com.museovivo.app.mapas.MapActivity"
             android:exported="false"
-            android:theme="@style/Theme.MuseoVivo" /> <!-- AR Activity -->
+            android:theme="@style/Theme.MuseoVivo" />
         <activity
-            android:name="com.museovivo.app.ui.content.CultureDetailActivity"
+            android:name="com.museovivo.app.ui.content.CulturalDetailActivity"
             android:exported="false" />
         <activity
             android:name="com.museovivo.app.ui.profile.EditProfileActivity"
@@ -301,17 +301,7 @@
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
-        <meta-data
-            android:name="com.google.ar.core.min_apk_version"
-            android:value="191106000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
-        <activity
-            android:name="com.google.ar.core.InstallActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
         <activity
             android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
             android:exported="false"

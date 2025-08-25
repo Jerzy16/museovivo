@@ -14,13 +14,12 @@ import com.museovivo.app.R;
 import com.museovivo.app.ui.auth.AuthActivity;
 import com.museovivo.app.ui.main.HomeFragment;
 
-import com.museovivo.app.ui.ar.ARFragment;
 import com.museovivo.app.ui.content.CultureFragment;
 import com.museovivo.app.ui.profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
     
-    private ImageButton buttonHome, buttonMap, buttonAR, buttonCulture, buttonProfile;
+    private ImageButton buttonHome, buttonMap, buttonCulture, buttonProfile;
     private FirebaseAuth firebaseAuth;
     
     @Override
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         // Verificar autenticación
         firebaseAuth = FirebaseAuth.getInstance();
         checkUserAuthentication();
-        
         initializeViews();
         setupNavigation();
         
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             setActiveTab(buttonHome);
         }
     }
-    
+    // Verificar si el usuario está autenticado
     private void checkUserAuthentication() {
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
         if (currentUser == null) {
@@ -52,58 +50,49 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
     }
-    
+    // Inicializar vistas
     private void initializeViews() {
         buttonHome = findViewById(R.id.btn_home);
         buttonMap = findViewById(R.id.btn_map);
-        buttonAR = findViewById(R.id.btn_ar);
         buttonCulture = findViewById(R.id.btn_culture);
         buttonProfile = findViewById(R.id.btn_profile);
     }
-    
+    // Configurar navegación
     private void setupNavigation() {
         buttonHome.setOnClickListener(v -> {
             loadFragment(new HomeFragment());
             setActiveTab(buttonHome);
         });
-        
+        // Mapa abren actividades completas
         buttonMap.setOnClickListener(v -> {
             // Launch MapActivity instead of loading MapFragment
             Intent mapIntent = new Intent(MainActivity.this, com.museovivo.app.mapas.MapActivity.class);
             startActivity(mapIntent);
             setActiveTab(buttonMap);
         });
-        
-        buttonAR.setOnClickListener(v -> {
-            loadFragment(new ARFragment());
-            setActiveTab(buttonAR);
-        });
-        
+        // Cultura abre actividad completa
         buttonCulture.setOnClickListener(v -> {
-            // Open CultureDetailActivity (full screen content) instead of fragment
-            Intent cultureIntent = new Intent(MainActivity.this, com.museovivo.app.ui.content.CultureDetailActivity.class);
-            startActivity(cultureIntent);
+            loadFragment(new com.museovivo.app.ui.content.CultureFragment());
             setActiveTab(buttonCulture);
         });
-        
+        // Perfil abre fragmento
         buttonProfile.setOnClickListener(v -> {
             loadFragment(new ProfileFragment());
             setActiveTab(buttonProfile);
         });
     }
-    
+    // Resaltar pestaña activa
     private void setActiveTab(ImageButton activeButton) {
-        // Reset all buttons to normal state
-        buttonHome.setSelected(false);
-        buttonMap.setSelected(false);
-        buttonAR.setSelected(false);
-        buttonCulture.setSelected(false);
-        buttonProfile.setSelected(false);
+        // Resetear todas las pestañas
+    buttonHome.setSelected(false);
+    buttonMap.setSelected(false);
+    buttonCulture.setSelected(false);
+    buttonProfile.setSelected(false);
         
         // Set active button
         activeButton.setSelected(true);
     }
-    
+    // Cargar fragmento en el contenedor
     private boolean loadFragment(Fragment fragment) {
         if (fragment != null) {
             getSupportFragmentManager()
@@ -114,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-    
+    // Verificar autenticación al iniciar actividad
     @Override
     protected void onStart() {
         super.onStart();

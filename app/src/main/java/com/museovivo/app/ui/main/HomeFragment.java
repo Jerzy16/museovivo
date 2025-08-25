@@ -1,7 +1,6 @@
 package com.museovivo.app.ui.main;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
+// Camera permission and manifest imports removed because AR was removed
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+// Removed unused permission helper imports
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,30 +21,35 @@ import com.google.firebase.auth.FirebaseUser;
 
 import com.museovivo.app.R;
 import android.content.Intent;
-import com.museovivo.app.ui.content.CultureDetailActivity;
 
+import com.museovivo.app.mapas.MapActivity;
+import com.museovivo.app.ui.content.CultureFragment;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
     
     private TextView textWelcome;
     private Button buttonExploreMap;
-    private Button buttonStartAR;
     private Button buttonViewCulture;
+    private TextView textVisitedPlaces;
+    private TextView textTotalPoints;
     // Featured routes RecyclerView is kept local to avoid unnecessary field scope
     
     private FirebaseAuth firebaseAuth;
+    // Actualizar estadísticas al reanudar
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateStats();
+    }
     //
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        
         firebaseAuth = FirebaseAuth.getInstance();
-        
         initializeViews(view);
         setupClickListeners();
         checkPermissions();
-        
         return view;
     }
     // Llamado después de que la vista ha sido creada
@@ -54,46 +57,33 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         updateWelcomeText();
+        updateStats();
         loadFeaturedRoutes();
     }
     // Inicializar vistas
     private void initializeViews(View view) {
         textWelcome = view.findViewById(R.id.text_welcome);
         buttonExploreMap = view.findViewById(R.id.button_explore_map);
-        buttonStartAR = view.findViewById(R.id.button_start_ar);
         buttonViewCulture = view.findViewById(R.id.button_view_culture);
-        // Prefer a dedicated featured routes RecyclerView in home layout. Fall back to cultural content if missing.
-        RecyclerView recyclerFeaturedRoutes = view.findViewById(R.id.recycler_featured_routes);
-        if (recyclerFeaturedRoutes == null) {
-            recyclerFeaturedRoutes = view.findViewById(R.id.recycler_cultural_content);
-        }
-        if (recyclerFeaturedRoutes != null) {
-            recyclerFeaturedRoutes.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        }
+        textVisitedPlaces = view.findViewById(R.id.text_visited_places_home);
+        textTotalPoints = view.findViewById(R.id.text_total_points_home);
     }
-    
+    // Configurar listeners de clic
     private void setupClickListeners() {
         buttonExploreMap.setOnClickListener(v -> {
             // Navegar al fragmento del mapa (implementar navegación)
             if (getActivity() != null) {
-                Toast.makeText(getContext(), "Navegando al mapa...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), MapActivity.class);
+                startActivity(intent);
             }
         });
-        
-        buttonStartAR.setOnClickListener(v -> {
-            // Verificar permisos de cámara antes de iniciar AR
-            if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                // Navegación a AR (pendiente implementación detallada)
-                Toast.makeText(getContext(), "Iniciando realidad aumentada...", Toast.LENGTH_SHORT).show();
-            } else {
-                requestCameraPermission();
-            }
-        });
-        
+        // Navegar al fragmento de cultura
         buttonViewCulture.setOnClickListener(v -> {
             if (getActivity() != null) {
-                Intent intent = new Intent(getActivity(), CultureDetailActivity.class);
-                startActivity(intent);
+                // Abrir el fragmento de cultura en pantalla principal
+                getActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, new CultureFragment()).addToBackStack(null).commit();
             }
         });
     }
@@ -120,13 +110,17 @@ public class HomeFragment extends Fragment {
         enableLocationFeatures();
     }
     
-    private void requestCameraPermission() {
-        // Simplificado - sin verificación de permisos por ahora
-        Toast.makeText(getContext(), "Permiso de cámara concedido", Toast.LENGTH_SHORT).show();
-    }
+    // camera permission helper removed
     
     private void enableLocationFeatures() {
         // Habilitar funciones que requieren ubicación
     // Funcionalidades basadas en ubicación: pendiente de implementación
+    }
+    private void updateStats() {
+        android.content.SharedPreferences prefs = getActivity() != null ? getActivity().getSharedPreferences("user_stats", android.content.Context.MODE_PRIVATE) : null;
+        int points = prefs != null ? prefs.getInt("points_gained", 0) : 0;
+        int visited = prefs != null ? prefs.getInt("places_visited", 0) : 0;
+        if (textTotalPoints != null) textTotalPoints.setText(String.valueOf(points));
+        if (textVisitedPlaces != null) textVisitedPlaces.setText(String.valueOf(visited));
     }
 }

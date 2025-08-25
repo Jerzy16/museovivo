@@ -12,13 +12,15 @@
 
         <ImageView
             android:id="@+id/image_profile_edit"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_profile"
-            android:background="@drawable/fab_background_secondary"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/profile_circle_background"
+            android:clipToOutline="true"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile" />
 
         <EditText
             android:id="@+id/edit_name"
@@ -29,14 +31,7 @@
             android:textColor="@color/primary"
             android:layout_marginBottom="12dp" />
 
-        <EditText
-            android:id="@+id/edit_photo_url"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="subir foto"
-            android:textColor="@color/primary"
-            android:inputType="textUri"
-            android:layout_marginBottom="16dp" />
+    <!-- Removed manual URL input; image selection is via tapping the avatar -->
 
         <ProgressBar
             android:id="@+id/progress_edit"

@@ -27,9 +27,7 @@
 # Model classes
 -keep class com.museovivo.app.domain.model.** { *; }
 
-# ARCore
--keep class com.google.ar.core.** { *; }
--keep class com.google.ar.sceneform.** { *; }
+# ARCore removed from this project
 
 # Retrofit
 -keepattributes Signature, InnerClasses, EnclosingMethod

@@ -13,7 +13,7 @@
         android:layout_height="56dp"
         android:background="@color/white"
         app:navigationIcon="@drawable/ic_back_arrow"
-        app:title="Centro del patrimonio"
+        app:title="Contenido Cultural"
         app:titleCentered="true"
         app:titleTextColor="@color/primary_text"
         android:paddingStart="8dp"
@@ -49,13 +49,6 @@
                     android:gravity="center_vertical"
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_filter"
-                        android:tint="@color/gray" />
-
                     <EditText
                         android:id="@+id/et_search_culture"
                         android:layout_width="match_parent"

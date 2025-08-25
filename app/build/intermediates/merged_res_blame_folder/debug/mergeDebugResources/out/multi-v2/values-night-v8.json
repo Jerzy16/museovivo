@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.museovivo.app-mergeDebugResources-64:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.museovivo.app-mergeDebugResources-61:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jenzy\\.gradle\\caches\\8.10\\transforms\\31d8ffa4c9ff4f8555d43fcae88b74af\\transformed\\material-1.12.0\\res\\values-night-v8\\values-night-v8.xml",

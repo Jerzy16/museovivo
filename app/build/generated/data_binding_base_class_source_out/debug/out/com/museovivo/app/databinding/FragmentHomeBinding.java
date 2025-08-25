@@ -9,7 +9,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.museovivo.app.R;
@@ -25,25 +24,25 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final Button buttonExploreMap;
 
   @NonNull
-  public final Button buttonStartAr;
-
-  @NonNull
   public final Button buttonViewCulture;
 
   @NonNull
-  public final RecyclerView recyclerFeaturedRoutes;
+  public final TextView textTotalPointsHome;
+
+  @NonNull
+  public final TextView textVisitedPlacesHome;
 
   @NonNull
   public final TextView textWelcome;
 
   private FragmentHomeBinding(@NonNull ScrollView rootView, @NonNull Button buttonExploreMap,
-      @NonNull Button buttonStartAr, @NonNull Button buttonViewCulture,
-      @NonNull RecyclerView recyclerFeaturedRoutes, @NonNull TextView textWelcome) {
+      @NonNull Button buttonViewCulture, @NonNull TextView textTotalPointsHome,
+      @NonNull TextView textVisitedPlacesHome, @NonNull TextView textWelcome) {
     this.rootView = rootView;
     this.buttonExploreMap = buttonExploreMap;
-    this.buttonStartAr = buttonStartAr;
     this.buttonViewCulture = buttonViewCulture;
-    this.recyclerFeaturedRoutes = recyclerFeaturedRoutes;
+    this.textTotalPointsHome = textTotalPointsHome;
+    this.textVisitedPlacesHome = textVisitedPlacesHome;
     this.textWelcome = textWelcome;
   }
 
@@ -80,21 +79,21 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button_start_ar;
-      Button buttonStartAr = ViewBindings.findChildViewById(rootView, id);
-      if (buttonStartAr == null) {
-        break missingId;
-      }
-
       id = R.id.button_view_culture;
       Button buttonViewCulture = ViewBindings.findChildViewById(rootView, id);
       if (buttonViewCulture == null) {
         break missingId;
       }
 
-      id = R.id.recycler_featured_routes;
-      RecyclerView recyclerFeaturedRoutes = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerFeaturedRoutes == null) {
+      id = R.id.text_total_points_home;
+      TextView textTotalPointsHome = ViewBindings.findChildViewById(rootView, id);
+      if (textTotalPointsHome == null) {
+        break missingId;
+      }
+
+      id = R.id.text_visited_places_home;
+      TextView textVisitedPlacesHome = ViewBindings.findChildViewById(rootView, id);
+      if (textVisitedPlacesHome == null) {
         break missingId;
       }
 
@@ -104,8 +103,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ScrollView) rootView, buttonExploreMap, buttonStartAr,
-          buttonViewCulture, recyclerFeaturedRoutes, textWelcome);
+      return new FragmentHomeBinding((ScrollView) rootView, buttonExploreMap, buttonViewCulture,
+          textTotalPointsHome, textVisitedPlacesHome, textWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

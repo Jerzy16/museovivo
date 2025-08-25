@@ -70,16 +70,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
     implementation 'com.google.android.gms:play-services-location:21.3.0'
 
-    // ARCore/Sceneform
-    implementation('com.google.ar.sceneform:core:1.17.1') {
-        exclude group: 'com.android.support'
-        exclude group: 'android.arch.lifecycle'
-    }
-
-    implementation('com.google.ar.sceneform:sceneform-base:1.17.1') {
-        exclude group: 'com.android.support'
-        exclude group: 'android.arch.lifecycle'
-    }
+    // ARCore/Sceneform removed — not used anymore
     // Permissions
     implementation 'com.karumi:dexter:6.2.3'
     // Image Loading

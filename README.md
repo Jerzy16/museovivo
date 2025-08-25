@@ -1,6 +1,6 @@
 # 🏛️ Museo Vivo - Aplicación Android
 
-Una aplicación móvil innovadora que permite a los usuarios explorar patrimonio cultural a través de realidad aumentada, mapas interactivos y contenido multimedia inmersivo.
+Una aplicación móvil innovadora que permite a los usuarios explorar patrimonio cultural a través de mapas interactivos y contenido multimedia inmersivo.
 
 ## 📋 Características Principales
 
@@ -15,10 +15,9 @@ Una aplicación móvil innovadora que permite a los usuarios explorar patrimonio
 - Rutas culturales predefinidas
 - Búsqueda de lugares cercanos
 
-### 📱 Experiencia AR
-- Visualización 3D de monumentos
-- Reconstrucciones históricas
-- Contenido multimedia inmersivo
+### 📱 Experiencia multimedia
+- Visualización de contenido multimedia
+- Reconstrucciones históricas (cuando estén disponibles)
 
 ### 🎯 Sistema de Gamificación
 - Logros y recompensas digitales
@@ -37,7 +36,7 @@ Una aplicación móvil innovadora que permite a los usuarios explorar patrimonio
 - **Base de datos**: Firebase Realtime Database
 - **Autenticación**: Firebase Auth
 - **Mapas**: Google Maps API
-- **AR**: ARCore + Sceneform
+-- **AR**: eliminado (no usado)
 - **UI**: Material Design 3
 - **Arquitectura**: Clean Architecture + MVVM
 
@@ -149,7 +148,7 @@ app/src/main/res/
 - [x] Layouts responsivos
 
 ### 🚧 En Desarrollo
-- [ ] Fragmento de Realidad Aumentada
+<!-- Realidad Aumentada eliminada de la versión actual -->
 - [ ] Sistema de logros y recompensas
 - [ ] Carga de contenido cultural desde Firebase
 - [ ] Funcionalidad offline
@@ -179,7 +178,7 @@ app/src/main/res/
 
 ## 🏗️ Próximos Pasos
 
-1. **Implementar ARFragment**: Realidad aumentada con ARCore
+1. **(AR eliminado)**
 2. **Conectar Firebase**: Cargar datos reales de puntos culturales
 3. **Sistema de Logros**: Gamificación completa
 4. **Modo Offline**: Room Database + sincronización

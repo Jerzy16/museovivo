@@ -71,9 +71,6 @@ public final class ActivityMapBinding implements ViewBinding {
   public final Chip chipPlaza;
 
   @NonNull
-  public final FloatingActionButton fabFilter;
-
-  @NonNull
   public final FloatingActionButton fabLayers;
 
   @NonNull
@@ -107,11 +104,11 @@ public final class ActivityMapBinding implements ViewBinding {
       @NonNull MaterialButton btnViewDetails, @NonNull MaterialCardView cardPointInfo,
       @NonNull Chip chipAll, @NonNull Chip chipChurch, @NonNull ChipGroup chipGroupCategories,
       @NonNull Chip chipMuseum, @NonNull Chip chipPark, @NonNull Chip chipPlaza,
-      @NonNull FloatingActionButton fabFilter, @NonNull FloatingActionButton fabLayers,
-      @NonNull FloatingActionButton fabZoomIn, @NonNull FloatingActionButton fabZoomOut,
-      @NonNull ImageView ivPointImage, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvPointCategory, @NonNull TextView tvPointDescription,
-      @NonNull TextView tvPointDistance, @NonNull TextView tvPointName) {
+      @NonNull FloatingActionButton fabLayers, @NonNull FloatingActionButton fabZoomIn,
+      @NonNull FloatingActionButton fabZoomOut, @NonNull ImageView ivPointImage,
+      @NonNull MaterialToolbar toolbar, @NonNull TextView tvPointCategory,
+      @NonNull TextView tvPointDescription, @NonNull TextView tvPointDistance,
+      @NonNull TextView tvPointName) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.bottomSheet = bottomSheet;
@@ -127,7 +124,6 @@ public final class ActivityMapBinding implements ViewBinding {
     this.chipMuseum = chipMuseum;
     this.chipPark = chipPark;
     this.chipPlaza = chipPlaza;
-    this.fabFilter = fabFilter;
     this.fabLayers = fabLayers;
     this.fabZoomIn = fabZoomIn;
     this.fabZoomOut = fabZoomOut;
@@ -250,12 +246,6 @@ public final class ActivityMapBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.fab_filter;
-      FloatingActionButton fabFilter = ViewBindings.findChildViewById(rootView, id);
-      if (fabFilter == null) {
-        break missingId;
-      }
-
       id = R.id.fab_layers;
       FloatingActionButton fabLayers = ViewBindings.findChildViewById(rootView, id);
       if (fabLayers == null) {
@@ -312,9 +302,9 @@ public final class ActivityMapBinding implements ViewBinding {
 
       return new ActivityMapBinding((CoordinatorLayout) rootView, appBarLayout, bottomSheet,
           btnBack, btnCloseFilter, btnLocation, btnNavigate, btnViewDetails, cardPointInfo, chipAll,
-          chipChurch, chipGroupCategories, chipMuseum, chipPark, chipPlaza, fabFilter, fabLayers,
-          fabZoomIn, fabZoomOut, ivPointImage, toolbar, tvPointCategory, tvPointDescription,
-          tvPointDistance, tvPointName);
+          chipChurch, chipGroupCategories, chipMuseum, chipPark, chipPlaza, fabLayers, fabZoomIn,
+          fabZoomOut, ivPointImage, toolbar, tvPointCategory, tvPointDescription, tvPointDistance,
+          tvPointName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

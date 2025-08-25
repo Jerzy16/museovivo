@@ -30,7 +30,7 @@ public class MapLayersBottomSheetFragment extends BottomSheetDialogFragment {
     }
 
     public MapLayersBottomSheetFragment() {}
-
+// Asegurar que la actividad implemente el listener
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -51,7 +51,7 @@ public class MapLayersBottomSheetFragment extends BottomSheetDialogFragment {
         String[] mapTypeNames = {"Estándar", "Satélite", "Relieve", "Híbrido"};
         int[] mapTypeIcons = {R.drawable.ic_map, R.drawable.ic_satellite_placeholder, R.drawable.ic_terrain_placeholder, R.drawable.ic_layers};
         int[] mapTypeValues = {1, 2, 3, 4};
-
+// Llenar el GridLayout con las opciones de tipo de mapa
         gridMapTypes.removeAllViews();
         for (int i = 0; i < mapTypeNames.length; i++) {
             View item = inflater.inflate(R.layout.item_map_type, gridMapTypes, false);

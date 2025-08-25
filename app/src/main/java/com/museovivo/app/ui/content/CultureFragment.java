@@ -41,7 +41,6 @@ public class CultureFragment extends Fragment {
         initializeViews(view);
         setupTabs();
 
-    // Select corresponding tab after setup (guarded)
         int selectIndex = 1; // default traditions
     if (CATEGORY_LEGENDS.equals(currentCategory)) selectIndex = 2;
     else if (CATEGORY_DANCES.equals(currentCategory)) selectIndex = 3;
@@ -66,11 +65,21 @@ public class CultureFragment extends Fragment {
         }
         // Populate master list with sample items and set adapter
         masterList = new java.util.ArrayList<>();
-    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_TRADITIONS, "Tradiciones", "El arte de contar historias", "Explora la rica tradición oral de nuestra región, donde las historias se transmiten de generación en generación.", R.drawable.plazadearmas1));
-    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_LEGENDS, "Leyendas", "La leyenda del Bosque Susurrante", "Descubra la historia mística de Whispering Woods, un lugar donde se dice que residen espíritus antiguos.", R.drawable.catedral));
-    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_TRADITIONS, "Tradición", "La danza de las luciérnagas", "Sea testigo de la encantadora Danza de las Luciérnagas, una celebración de la belleza de la naturaleza y la magia de las noches de verano.", R.drawable.mirador));
-
-        adapter = new CulturalContentAdapter(new java.util.ArrayList<>(masterList), item -> startDetailActivity(item.key));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_TRADITIONS, "Tradiciones", "Fiesta de San Juan", "Es muy celebrada, sobre todo en el distrito de Pachaconas (Antabamba), donde se organizan ferias agropecuarias en las que se exhiben los mejores productos de la región. Esta feria tiene reconocimiento oficial. La fiesta de San Juan está a cargo de un mayordomo que allí se denomina carguyocc, quien corre con todos los gastos.", R.drawable.sanjuan));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_TRADITIONS, "Tradiciónes", "Carnaval Abanquino", "El Carnaval abanquino-apurimeño es una importante, colorida y pícara celebración que se lleva a cabo en todo el departamento de Apurímac. En esta celebración el entusiasmo prima y nadie puede escapar de la alegría y entretenimiento propios del carnaval.", R.drawable.carnalabancay));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_LEGENDS, "Leyendas", "El Ampay: Guardián eterno", "El nevado Ampay es considerado un “apus”, o espíritu protector dentro de las creencias andinas locales. La leyenda cuenta cómo este guardián eterno se erige sobre Abancay velando por sus habitantes día y noche contra cualquier amenaza natural o sobrenatural. Los pobladores le ofrecen respeto mediante rituales ancestrales para mantener su protección y asegurar cosechas abundantes.", R.drawable.ampay));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_LEGENDS, "Leyendas", "Los túneles secretos coloniales subterráneos","Bajo Abancay correrían laberintos ocultos construidos durante la época colonial española utilizados tanto para escapar ante ataques indígenas como para transportar metales preciosos extraídos ilegalmente evadiendo impuestos reales . A pesar de muchas investigaciones aún estos túneles mantienen sus entradas selladas o perdidas , alimentando fantasías sobre tesoros olvidados aún esperando ser descubiertos por algún aventurero intrépido.", R.drawable.tuneles));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_LEGENDS, "Leyendas", "La leyenda del Puente Pachachaca", "El Puente Pachachaca, construido en el siglo XVIII, es un testimonio de la ingeniería colonial. Según la leyenda local, el puente fue construido por un grupo de esclavos que, al ser liberados, juraron protegerlo para siempre. Se dice que en las noches de luna llena, los espíritus de estos esclavos aún vigilan el puente, asegurándose de que nadie lo dañe.", R.drawable.puentepachachaca));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_LEGENDS, "Leyendas", "La sirenas en el río Yaku Mayo", "A lo largo del caudaloso río Yaku Mayo hay historias sobre encuentros con encantadoras pero peligrosas sirenas cuya belleza atrapa a los incautos pescadores o viajeros nocturnos. Se dice que estas criaturas poseen tal encanto musical que quienes escuchan sus cantos quedan embelesados para luego ser arrastrados al fondo acuático desde donde jamás regresan.", R.drawable.siremas));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_DANCES, "Danzas", "Lazo tinkay", "Es una danza ritual que se consagra a los apus, que son las montañas que protegen al poblado, antes y después de la corrida de toros o toro pukllay. Se bendicen los lazos que utilizan los laceadores presentes en la corrida de toros.\n" +
+            "\n" + "Las mujeres visten faldas rojas y blancas, blusa blanca y chalina roja con sombrero negro. Los hombres visten pantalón, chaleco y sombrero negros, y camisa a cuadros.\n" +
+            "\n" + "Uno o dos hombres se disfrazan de toro. Los participantes se encuentran en la plaza donde se celebra la corrida portando un dios Kuntur que colocan en el lomo del toro.", R.drawable.tinkay));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_DANCES, "Danzas", "Sara yapuy", "la acción de sembrar el maíz. Mediante movimientos que siguen el ritmo de la música, el dueño y su peón encabezan el grupo llevando las herramientas.\n" +
+            "\n" + "Detrás van llegando más personas que comienzan a sembrar. Después del descanso llegan las mujeres con las meriendas.\n" +
+            "\n" + "Luego de comer, se baila en parejas y se finaliza con un coro de mujeres llamado wankaska. Los varones repiten cada estrofa. Al final, todos caminan alegres rumbo a sus casas.\n" +
+            "\n" + "Los hombres utilizan un traje mestizo: pantalón blanco, camisa a cuadros, chalina y sombrero. Las mujeres visten faldas de colores, blusa blanca y sombrero negro.", R.drawable.sarayapuy));
+    masterList.add(new CulturalContentAdapter.CulturalItem(CATEGORY_DANCES, "Danzas","Wicuña chaqoy","Es una antigua danza preincaica que representa el trasquilado de la vicuña. Mediante esta danza se defiende y ensalza el valor de este animal andino.Al igual que hacían los incas, la idea es proteger la vida de este animal para que no se extinga.",R.drawable.wicuna));
+    adapter = new CulturalContentAdapter(new java.util.ArrayList<>(masterList), item -> startDetailActivity(item));
         if (recyclerContent != null) {
             recyclerContent.setAdapter(adapter);
         }
@@ -85,7 +94,6 @@ public class CultureFragment extends Fragment {
             });
         }
     }
-    
     private void setupTabs() {
         // Configurar botones de categorías
         // Los botones ya están definidos en el layout XML
@@ -144,10 +152,12 @@ public class CultureFragment extends Fragment {
     // Currently filtered content is handled by filter(...) using masterList
     Toast.makeText(getContext(), "Cargando muestra: " + category, Toast.LENGTH_SHORT).show();
     }
-    private void startDetailActivity(String category) {
+    private void startDetailActivity(CulturalContentAdapter.CulturalItem item) {
         if (getContext() == null) return;
-        android.content.Intent i = new android.content.Intent(getContext(), CultureDetailActivity.class);
-        i.putExtra("category", category);
+        android.content.Intent i = new android.content.Intent(getContext(), com.museovivo.app.ui.content.CulturalDetailActivity.class);
+        i.putExtra(com.museovivo.app.ui.content.CulturalDetailActivity.EXTRA_TITLE, item.title);
+        i.putExtra(com.museovivo.app.ui.content.CulturalDetailActivity.EXTRA_DESC, item.excerpt);
+        i.putExtra(com.museovivo.app.ui.content.CulturalDetailActivity.EXTRA_IMAGE_URL, item.imageRes);
         startActivity(i);
     }
 }

@@ -25,9 +25,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.os.Looper;
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResponse;
+import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.location.Priority;
+import com.google.android.gms.common.api.ResolvableApiException;
+import com.google.android.gms.tasks.Task;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -57,6 +66,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     // Google Maps
     private GoogleMap mMap;
     private FusedLocationProviderClient fusedLocationClient;
+    private LocationRequest locationRequest;
+    private LocationCallback locationCallback;
+    private Marker userLocationMarker;
+    private boolean isFirstLocation = true;
 
     // Permisos
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
@@ -71,7 +84,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private static final String[] BACKGROUND_LOCATION_PERMISSIONS = {
             Manifest.permission.ACCESS_BACKGROUND_LOCATION
     };
-
     // UI Elements
     private MaterialCardView cardPointInfo;
     private TextView tvPointName, tvPointCategory, tvPointDistance, tvPointDescription;
@@ -102,6 +114,34 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             setContentView(R.layout.activity_map);
             // Inicializar cliente de ubicación
             fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+            // Configurar request de ubicación
+            locationRequest = LocationRequest.create();
+            locationRequest.setInterval(5000);
+            locationRequest.setFastestInterval(2000);
+            locationRequest.setPriority(Priority.PRIORITY_HIGH_ACCURACY);
+
+            locationCallback = new LocationCallback() {
+                @Override
+                public void onLocationResult(LocationResult locationResult) {
+                    if (locationResult == null || mMap == null) return;
+                    Location loc = locationResult.getLastLocation();
+                    if (loc != null) {
+                        LatLng latLng = new LatLng(loc.getLatitude(), loc.getLongitude());
+                        runOnUiThread(() -> {
+                            if (userLocationMarker == null) {
+                                MarkerOptions mo = new MarkerOptions().position(latLng).title("Mi ubicación").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+                                userLocationMarker = mMap.addMarker(mo);
+                            } else {
+                                userLocationMarker.setPosition(latLng);
+                            }
+                            if (isFirstLocation) {
+                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16));
+                                isFirstLocation = false;
+                            }
+                        });
+                    }
+                }
+            };
             // Inicializar datos
             initializeData();
             // Inicializar UI
@@ -317,6 +357,31 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         // Agregar marcadores
         updateMapMarkers();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mMap != null && checkLocationPermission()) {
+            startLocationUpdates();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopLocationUpdates();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SETTINGS_REQUEST_CODE) {
+            // After user interacts with location settings dialog, try to start updates
+            if (checkLocationPermission()) {
+                startLocationUpdates();
+            }
+        }
     }
     // Manejar clics en marcadores
     @Override
@@ -574,20 +639,73 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         if (ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
+            // Ensure device settings allow location
+            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                    .addLocationRequest(locationRequest);
+            SettingsClient client = LocationServices.getSettingsClient(this);
+            Task<LocationSettingsResponse> task = client.checkLocationSettings(builder.build());
+            task.addOnSuccessListener(response -> startLocationUpdates());
+            task.addOnFailureListener(e -> {
+                if (e instanceof ResolvableApiException) {
+                    try {
+                        ((ResolvableApiException) e).startResolutionForResult(this, SETTINGS_REQUEST_CODE);
+                    } catch (Exception ex) {
+                        startLocationUpdates();
+                    }
+                } else {
+                    startLocationUpdates();
+                }
+            });
         }
     }
+
+    private void startLocationUpdates() {
+        try {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) return;
+            fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+        } catch (Exception e) {
+            Log.e(TAG, "Error starting location updates", e);
+        }
+    }
+
+    private void stopLocationUpdates() {
+        try {
+            if (fusedLocationClient != null && locationCallback != null) fusedLocationClient.removeLocationUpdates(locationCallback);
+        } catch (Exception e) {
+            Log.e(TAG, "Error stopping location updates", e);
+        }
+    }
+    // Manejar resultado de solicitud de permisos
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            // Verificar el estado real de permisos (puede variar el orden de permisos devueltos)
+            if (checkLocationPermission()) {
                 enableMyLocation();
                 Toast.makeText(this, "¡Permisos concedidos!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "La funcionalidad de ubicación estará limitada", Toast.LENGTH_LONG).show();
+                // Mostrar diálogo que ofrezca abrir ajustes de la app para otorgar permisos
+                new AlertDialog.Builder(this)
+                        .setTitle("Permiso de Ubicación Denegado")
+                        .setMessage("La funcionalidad de ubicación estará limitada. ¿Deseas abrir los ajustes de la app para habilitar los permisos?")
+                        .setPositiveButton("Abrir ajustes", (dialog, which) -> openAppSettings())
+                        .setNegativeButton("Cerrar", null)
+                        .show();
             }
+        }
+    }
+// Abrir ajustes de la aplicación
+    private void openAppSettings() {
+        try {
+            Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            intent.setData(Uri.parse("package:" + getPackageName()));
+            startActivity(intent);
+        } catch (Exception e) {
+            Log.e(TAG, "No se pudo abrir ajustes", e);
+            Toast.makeText(this, "No se pudo abrir los ajustes. Habilita permisos manualmente.", Toast.LENGTH_LONG).show();
         }
     }
     // Manejar cambios en el mapa

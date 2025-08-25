@@ -45,16 +45,6 @@
             android:contentDescription="Mapa" />
 
         <ImageButton
-            android:id="@+id/btn_ar"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_ar"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/primary"
-            android:contentDescription="Realidad Aumentada" />
-
-        <ImageButton
             android:id="@+id/btn_culture"
             android:layout_width="0dp"
             android:layout_height="48dp"

@@ -1,334 +1,382 @@
 [
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_custom_marker.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\custom_marker.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_bottom_sheet_map_layers.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\bottom_sheet_map_layers.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_bottom_sheet_map_layers.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\bottom_sheet_map_layers.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_profile_circle_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\profile_circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_museo.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_museo.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_ar.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_ar.xml"
     },
     {
-        "merged": "com.museovivo.app-debug-66:/layout_activity_edit_profile.xml.flat",
-        "source": "com.museovivo.app-main-68:/layout/activity_edit_profile.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_park.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_park.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-hdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_send.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_send.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_culture_detail.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_culture_detail.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_info.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_info.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_filter.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_filter.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_iglesia.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_iglesia.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_route.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_route.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_filter.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_filter.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_fragment_ar.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\fragment_ar.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_puente.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_puente.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_my_location.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_my_location.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_fab_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\fab_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_custom_marker.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\custom_marker.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_plaza.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_plaza.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_auth.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_auth.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_cultural_detail.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_cultural_detail.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_fragment_culture.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\fragment_culture.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_museo.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\museo.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_plazadearmas1.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\plazadearmas1.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_rounded_image_inner.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\rounded_image_inner.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_share_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_share_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_sarayapuy.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\sarayapuy.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_mercado.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_mercado.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_toolbar_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\toolbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_mirador.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_mirador.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\edit_text_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_museum.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_museum.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_send.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_default.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_default.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_item_map_type.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\item_map_type.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_church.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_church.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_tinkay.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\tinkay.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xxxhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_plaza_armas_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\plaza_armas_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_splash_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\splash_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_plaza.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_plaza.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_my_location.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_my_location.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_museum_logo.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_museum_logo.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_fullscreen_image.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_fullscreen_image.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_apurimac.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\apurimac.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_marker_lagrima_red.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_marker_lagrima_red.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_back_arrow.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_back_arrow.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_item_cultural_card.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\item_cultural_card.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_fab_background_secondary.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\fab_background_secondary.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_edit_profile.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_edit_profile.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_park.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_park.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-mdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_mercadocentral.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\mercadocentral.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-mdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_item_gallery_image.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\item_gallery_image.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_auprimac1.jpg.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\auprimac1.jpg"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_zoom_out.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_zoom_out.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_share_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_share_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_profile.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_zoom_in.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_zoom_in.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_point_detail.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_point_detail.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_wicuna.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\wicuna.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_close.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_zoom_out.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_zoom_out.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_rounded_image_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\rounded_image_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_layers.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_layers.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_museum.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_museum.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_museum_logo.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_museum_logo.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_mirador.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\mirador.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_terrain_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_terrain_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_museo.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\museo.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_auprimac1.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\auprimac1.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_img.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\img.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xxhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_navigation_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_navigation_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_back_arrow.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_back_arrow.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_auth.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_auth.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_edit_text_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\edit_text_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_culture.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_culture.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_puentepacha.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\puentepacha.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_catedral.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\catedral.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_item_gallery_image.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\item_gallery_image.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_catedral.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\catedral.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_carnalabancay.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\carnalabancay.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_navigation_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_navigation_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_church.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_church.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_ar.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_ar.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-mdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-hdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_sanjuan.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\sanjuan.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_satellite_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_satellite_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\circle_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_default.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_default.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_point_variant_plaza.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\point_variant_plaza.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_layers.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_layers.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_circular_button_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\circular_button_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_museo.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_museo.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_toolbar_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\toolbar_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_mirador.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\mirador.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_map.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_satellite_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_satellite_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_puentepachachaca.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\puentepachachaca.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_puentepacha.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\puentepacha.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_fab_background_secondary.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\fab_background_secondary.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_mercadocentral.png.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\mercadocentral.png"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_puente.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_puente.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_fullscreen_image.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_fullscreen_image.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_rounded_image_inner.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\rounded_image_inner.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_marker_lagrima_red.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_marker_lagrima_red.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\menu_bottom_navigation_menu.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\menu\\bottom_navigation_menu.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_stats_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\stats_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_home.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-mdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_outlined_button_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\outlined_button_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_route.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_route.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xxhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_map.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_map.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_tuneles.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\tuneles.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ampay.jpg.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ampay.jpg"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_fragment_ar.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\fragment_ar.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\menu_bottom_navigation_menu.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\menu\\bottom_navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_stats_background.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\stats_background.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_point_detail.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_point_detail.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_item_map_type.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\item_map_type.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xxxhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_zoom_in.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_zoom_in.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_plazadearmas1.png.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\plazadearmas1.png"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_culture.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_culture.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_map.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_map.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\mipmap-hdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_circular_button_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\circular_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_ic_map.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\ic_map.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_siremas.webp.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\siremas.webp"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\layout_activity_culture_detail.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\layout\\activity_culture_detail.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\splash_background.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_apurimac.jpg.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\apurimac.jpg"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_info.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\xml\\data_extraction_rules.xml"
+        "merged": "com.museovivo.app-debug-63:/layout_fragment_home.xml.flat",
+        "source": "com.museovivo.app-main-65:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-66:\\drawable_plaza_armas_placeholder.xml.flat",
-        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-68:\\drawable\\plaza_armas_placeholder.xml"
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_fab_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_iglesia.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_iglesia.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_plaza.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_plaza.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_ic_terrain_placeholder.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\ic_terrain_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_fragment_culture.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\fragment_culture.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-hdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_mirador.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_mirador.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_item_cultural_card.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\item_cultural_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_outlined_button_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\outlined_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\mipmap-xxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\layout_point_variant_mercado.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\layout\\point_variant_mercado.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-debug-63:\\drawable_rounded_image_background.xml.flat",
+        "source": "C:\\Users\\jenzy\\.gradle\\daemon\\8.10\\com.museovivo.app-main-65:\\drawable\\rounded_image_background.xml"
     }
 ]
